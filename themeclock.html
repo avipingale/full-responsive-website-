@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .phone-screen {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    
+}
+
+.phone-wrapper {
+   
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide-down {
+    transform: translate(0, 500px);
+    -webkit-transform: translate(0, 500px);
+}
+
+.phone-lockscreen {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    background: white;
+    width:300px;
+    height: 500px;
+    transition: transform 1s ease-in-out 0s;
+}
+
+.phone-lockscreen h2 {
+    color: black;   
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Helvetica';
+}
+
+.pass {
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    width: 50px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.pass li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #4bcd7d;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out
+}
+
+.pass li:first-child {
+    margin-left: 0;
+}
+
+.pass li:after {
+   color: white;
+   /* //content: "○"; */
+}
+
+.keypad {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 10px;
+}
+
+.dial {
+    font-family: Helvetica;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 85px;
+    font-size: 40px;
+    color: black;
+    list-style: none;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 100%;
+    background: white;
+    position: relative;
+}
+
+.dial:before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #4bcd7d 0%, #1ca844 100%);
+    padding: 2px;
+    width: 75px;
+    height:75px;
+    top: -2px;
+    left: -2px;
+    position:absolute;
+    z-index:-1;
+}
+
+.middle {
+    margin-left: 95px;
+    margin-right: 90px;
+}
+
+.dial:active {
+    background: #7d7d7d;
+}
+
+@keyframes press {
+  0% {
+    background: white;
+  }
+
+  50% {
+    background: #7d7d7d;
+  }
+    
+  100% {
+    background: white;
+  }
+}
+
+@-webkit-keyframes press { 
+    0% {
+        background: white;
+      }
+    
+      50% {
+        background: #7d7d7d;
+      }
+        
+      100% {
+        background: white;
+      }
+}
+
+@keyframes fill {
+  to {
+    background: white;    
+  }
+}
+
+@-webkit-keyframes fill { 
+  to {
+    background: white;    
+  }
+}
+
+
+.fill {
+    background: #4bcd7d;
+}
+
+.press {
+    -webkit-animation:  press 0.5s ease forwards 0s;
+    animation: press 0.5s ease forwards 0s;
+}
+</style>
+<body>
+    <div class="phone-wrapper">
+        <div class="phone-lockscreen">
+            <h2>Enter passcode</h2>
+            <ul class="pass">
+                <li class></li>
+                <li class></li>
+                <li class></li>
+                <li class></li>
+            </ul>
+            <ul class="keypad">
+                <li class="dial">1</li>
+                <li class="dial">2</li>
+                <li class="dial">3</li>
+                <li class="dial">4</li>
+                <li class="dial">5</li>
+                <li class="dial">6</li>
+                <li class="dial">7</li>
+                <li class="dial">8</li>
+                <li class="dial">9</li>
+                <li class="dial middle">0</li>
+            </ul>
+        </div>
+        <img class="phone-screen" src="http://img.wonderhowto.com/img/88/05/63524879928898/0/get-these-badass-circular-app-icons-round-out-your-ios-7-iphone-ipads-home-screen.w654.jpg"/>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+    animateLockscreen();
+    setInterval(function(e) {
+     animateLockscreen();        
+    }, 10000);
+});
+
+function animateLockscreen() {
+    var dials = $('.dial');
+    var pass = $('.pass li');
+    var passCode = [2, 3, 9, 0];
+    for (var i=0; i<passCode.length; i++) {
+        console.log(pass[i]);
+        // if code is 0, it means we actually want index 10
+        var code = passCode[i]-1 == -1 ? 9 : passCode[i]-1;
+        var time = parseInt(500+(500*i));
+        //console.log(code);
+        //console.log(time);
+        //console.log($(dials[code]));
+        $(dials[code]).delay(time).queue(function(e) {   
+            console.log($(this));
+            $(this).addClass('press').dequeue();
+        });
+        $(pass[i]).delay(time).queue(function(e) {
+            console.log($(this));
+            $(this).addClass('fill').dequeue();
+        });
+    }
+    setTimeout(function(e) {
+        $('.phone-lockscreen').addClass('slide-down');
+    }, 3500);
+    setTimeout(function(e) {
+        $('.fill').removeClass('fill');
+        $('.press').removeClass('press');
+        $('.phone-lockscreen').removeClass('slide-down');
+    }, 8500);   
+};
+</script>
+</html>

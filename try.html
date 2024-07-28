@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <h1>product 1</h1>
+        <img src="image1.png" alt="" width="100">
+        <button class="addToCart">AddToCart</button>
+    </div>
+    <div class="product">
+        <h1>product 2</h1>
+        <img src="image2.jpg" alt="" width="100">
+        <button class="addToCart">AddToCart</button>
+    </div>
+    <div class="product">
+        <h1>product 3</h1>
+        <img src="image4.png" alt="" width="100">
+        <button class="addToCart">AddToCart</button>
+    </div>
+    
+    <div class="saveCart"></div>
+
+    <script>
+        var btn = document.getElementsByClassName('addToCart');
+        for(var i=0;i<btn.length;i++)
+        {
+            var button = btn[i];
+            button.addEventListener('click',addToCart);
+        }
+        function addToCart(e)
+        {
+            e.preventDefault();
+            var tar = e.target.parentElement
+            var pname = tar.getElementsByTagName('h1')[0].innerText;
+            var img = tar.getElementsByTagName('img')[0].getAttribute('src');
+            console.log(img);
+            saveCart(pname,img);
+        }
+        function saveCart(product_name,image)
+        {
+            var celem = document.createElement('div');
+            celem.setAttribute('class','cartpro');
+            var titleTar = document.getElementsByClassName('ctitle');
+            for (var i=0;i<titleTar.length;i++)
+            {
+                if(titleTar[i].innerText===product_name)
+                {
+                    alert("allerdy exists");
+                    return;
+
+                }else{
+
+                }
+            }
+
+            var iHtml = `<div class='cart-product'><h2 class='ctitle'>${product_name}</h2>
+                <img src="${image}" alt="" width="100">
+                <button type='button' class='remove'>removeCart</button>`;
+
+            celem.innerHTML=iHtml;
+
+            var target=document.getElementsByClassName('saveCart')[0];
+            target.appendChild(celem);
+
+            removeButton();
+
+        }
+        function removeButton()
+        {
+            var removeBtn = document.getElementsByClassName('remove');
+            for (var  i=0;i<removeBtn.length;i++)
+            {
+                var rbtn = removeBtn[i];
+                rbtn.addEventListener('click',removeCart);
+            }
+        }
+        function removeCart(e)
+        {
+            var btn = e.target;
+            var cartPro= btn.parentElement;
+            var tar = btn.parentElement.parentElement;
+            tar.removeChild(cartPro);
+        }
+    </script>
+    
+</body>
+</html>
