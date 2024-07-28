@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        <input type="text" name="" class="fn" id="" placeholder="fname">
+        <input type="text" name="" class="ln" id="" placeholder="lname">
+        <p class="fname"></p>
+        <p class="lname"></p>
+    </form>
+    <button id="addField">Add Field</button>
+    <button id="show data">show Data</button>
+   
+   
+   <script>
+    var add = document.getElementById('addField');
+    add.addEventListener('click',function(e){
+        e.preventDefault();
+        var celement1=document.createElement('input');
+        celement1.setAttribute('class','fn');
+        celement1.setAttribute("placeholder","fname");
+        celement1.setAttribute("type","text");
+
+        var  form=document.forms["frm"];
+        form.appendChild(celement1);
+        var celement2=document.createElement('input');
+        celement2.setAttribute('class','ln');
+        celement2.setAttribute("placeholder","lname");
+        celement2.setAttribute("type","text");
+        form.appendChild(celement2);
+
+        var celement3=document.createElement('p');
+        celement3.setAttribute('class','fname');
+        form.appendChild(celement3);
+
+        var celement4=document.createElement('p');
+        celement4.setAttribute('class','lname');
+        form.appendChild(celement4);
+      
+    })
+    document.getElementById('show data').addEventListener('click',(e)=>{
+        var fname = document.getElementsByClassName('fn');
+        var lname = document.getElementsByClassName('ln');
+
+        var setfn = document.getElementsByClassName('fname');
+        var setln = document.getElementsByClassName('lname');
+
+        for(var i=0;i<fname.length;i++)
+        {
+            setfn[i].innerHTML=fname[i].value;
+            setln[i].innerHTML=lname[i].value;
+        }
+    })
+    
+ 
+   </script>
+   
+   
+   
+    
+</body>
+</html>

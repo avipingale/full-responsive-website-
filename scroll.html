@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQ
+eAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="
+no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: aqua; */
+    }
+
+    header {
+        width: 96%;
+        height: auto;
+        margin: 0px auto;
+        display: grid;
+        padding: 10px 10px;
+        align-items: center;
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px 10px;
+        border-bottom: 1px solid rgb(88, 88, 88);
+
+
+    }
+
+    .box i {
+        font-size: 40px;
+    }
+
+    .box:nth-child(1) {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+
+    }
+
+    .box:nth-child(1) span {
+        color: red;
+    }
+
+    .box:nth-child(2) {
+        display: flex;
+    }
+
+    .box:nth-child(2) i {
+        display: none;
+    }
+
+    .box:nth-child(2) ul {
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    .box:nth-child(2) ul li a {
+        color: black;
+        text-decoration: none;
+        padding: 2px 10px;
+        position: relative;
+        font-family: arial;
+    }
+
+    .box:nth-child(2) ul li a:before {
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color: rgb(20, 208, 55);
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: scale(0)rotateY(0deg)skew(10deg);
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+
+    .box:nth-child(2) ul li:hover a::before {
+        /* width: 100%; */
+        transition: .5s;
+        transform: scale(1.2)rotateY(360deg)skew(10deg);
+
+    }
+
+    .box:nth-child(3) {
+        text-align: center;
+    }
+
+    .box:nth-child(3) button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        margin: 0px auto;
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 450px;
+        grid-gap: 10px 10px;
+        justify-content: center;
+
+
+    }
+
+    :root {
+        --tbg-background-color: white;
+        --ttext-color: black;
+        --tbutton-background-color: rgb(255, 119, 0);
+        --fm-font-family: arial;
+        --shadow-box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+    }
+
+    .tile {
+        display: grid;
+        grid-template-rows: 1fr 40px 40px;
+        row-gap: 2px;
+        background-color: var(--tbg-background-color);
+        padding: 5px 5px;
+        box-shadow: var(--shadow-box-shadow);
+      
+    }
+
+    .pdetail {}
+
+    .pdetail:nth-child(1) img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pdetail:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pdetail:nth-child(2) h2 {
+        text-align: center;
+        font-family: var(--fm-font-family);
+    }
+
+    .pdetail:nth-child(3) {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .pdetail:nth-child(3) button {
+        flex-basis: 100px;
+        flex-grow: 1;
+        font-size: 16px;
+        background-color: var(--tbutton-background-color);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: var(--shadow-box-shadow);
+
+    }
+
+    /* <!-- @media queries --> */
+
+
+    @media screen and (max-width:1024px) {
+
+        header {
+            background-color: black;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            z-index: -1;
+        }
+
+        .box:nth-child(3) button {
+
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+
+
+        }
+
+        .box:nth-child(2) ul {
+            flex-direction: column;
+            display: none;
+        }
+
+        .box:nth-child(2) i {
+            display: block;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .box:nth-child(2) ul li a {
+            color: rgb(255, 255, 255);
+            z-index: 1;
+
+        }
+
+        .box:nth-child(2) ul li a:before {
+
+
+            background-color: rgb(255, 4, 4);
+
+
+        }
+
+        .box:nth-child(1) h1,
+        i {
+            color: white;
+        }
+
+        main {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 350px;
+        }
+
+        .pdetail:nth-child(2) h2 {
+            font-size: 14px;
+        }
+
+        .pdetail:nth-child(3) {
+
+            column-gap: 5px;
+        }
+
+        .pdetail:nth-child(3) button {
+            transform: scale(.8);
+
+        }
+
+
+    }
+
+    @media screen and (max-width:768px) {
+        main {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 300px;
+        }
+
+        .pdetail:nth-child(2) h2 {
+            font-size: 14px;
+        }
+
+        .pdetail:nth-child(3) {
+
+            column-gap: 5px;
+        }
+
+        .pdetail:nth-child(3) button {
+            transform: scale(.8);
+
+        }
+
+    }
+
+    @media screen and (max-width:500px) {
+        .box:nth-child(2) ul {
+            flex-direction: column;
+            display: none;
+        }
+
+        .box:nth-child(2) i {
+            display: block;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        main {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 250px;
+        }
+
+        .pdetail:nth-child(2) h2 {
+            font-size: 14px;
+        }
+
+        .pdetail:nth-child(3) {
+
+            column-gap: 5px;
+        }
+
+        .pdetail:nth-child(3) button {
+            transform: scale(.8);
+
+        }
+    }
+</style>
+
+
+
+<body>
+    <header>
+        <div class="box">
+            <i class="fa-brands fa-google"></i>
+            <h1><span>o</span>pala</h1>
+        </div>
+        <div class="box">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="box">
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="box" style="width: 100%; height: 150vh;background-color: gray;"></div>
+
+
+    <main>
+        <style>
+            :root {
+                --tbg-background-color: white;
+                --ttext-color: black;
+                --tbutton-background-color: rgb(255, 119, 0);
+                --fm-font-family: arial;
+                --shadow-box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+            }
+
+            .tile {
+                display: grid;
+                grid-template-rows: 1fr 40px 40px;
+                row-gap: 2px;
+                background-color: var(--tbg-background-color);
+                padding: 5px 5px;
+                box-shadow: var(--shadow-box-shadow);
+            }
+            .tile:first-child{
+                transform: translateX(-100%);
+                opacity: 0;
+              
+            }
+            .tile:nth-child(2)
+            {
+                transform: translateX(-100%);
+                opacity: 0;
+                
+            }
+            .tile:nth-child(3)
+            {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            .tile:nth-child(4)
+            {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            .tile:nth-child(5)
+            {
+                transform: translateX(-100);
+                opacity: 0;
+            }
+            .tile:nth-child(6){
+                transform: translateX(-100);
+                opacity: 0;
+            }
+            .tile:nth-child(7)
+            {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            .tile:nth-child(8){
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            .pdetail{}
+
+            .pdetail:nth-child(1) img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .pdetail:nth-child(2) {
+                display: flex;
+                justify-content: center;
+
+                align-items: center;
+            }
+
+            .pdetail:nth-child(2) h2 {
+                text-align: center;
+                font-family: var(--fm-font-family);
+            }
+
+            .pdetail:nth-child(3) {
+                display: flex;
+                column-gap: 10px;
+            }
+
+            .pdetail:nth-child(3) button {
+                flex-basis: 100px;
+                flex-grow: 1;
+                font-size: 16px;
+                background-color: var(--tbutton-background-color);
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                box-shadow: var(--shadow-box-shadow);
+
+            }
+        </style>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        window.addEventListener('scroll',animationScroll);
+
+        function animationScroll()
+        {
+            var img = document.getElementsByClassName('tile');
+
+            for(var i=0;i<img.length;i++)
+            {
+                var iWindow = window.innerHeight;
+                var iNHeight = img[i].getBoundingClientRect().top;
+                var compo = 300;
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==0)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==0)
+                    {
+
+                        img[i].style.transform="translateX(-100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==1)
+                    {
+
+                        img[i].style.transform="translateY(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==1)
+                    {
+
+                        img[i].style.transform="translateX(-100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==2)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==2)
+                    {
+
+                        img[i].style.transform="translateX(100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==3)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==3)
+                    {
+
+                        img[i].style.transform="translateX(100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==4)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==4)
+                    {
+
+                        img[i].style.transform="translateX(-100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==5)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==5)
+                    {
+
+                        img[i].style.transform="translateX(-100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==6)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==6)
+                    {
+
+                        img[i].style.transform="translateX(100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+                if(iNHeight < iWindow - compo)
+                {
+                    if(i==7)
+                    {
+
+                        img[i].style.transform="translateX(0%)";
+                        img[i].style.opacity = 1; 
+                        img[i].style.transition =".5s"; 
+                    }
+                }else{
+                    if(i==7)
+                    {
+
+                        img[i].style.transform="translateX(100%)";
+                        img[i].style.opacity = 0; 
+                        img[i].style.transition =".5s"; 
+                    }
+                   
+                }
+
+
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
