@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" name="" id="price">
+        <div class="plus"><button>+</button></div>
+        <input type="text" name="" id="inc">
+        <div class="min"><button>-</button></div>
+
+    </form>
+    <p class="grand"></p>
+    <script>
+
+        var count =1;
+
+        document.getElementsByClassName('plus')[0].addEventListener('click',(e)=>{
+            e.preventDefault();
+            var inputValue = document.getElementById('inc').value=count;
+            var price =Number(document.getElementById('price').value);
+            var total = price * inputValue;
+            document.getElementsByClassName('grand')[0].innerHTML = total; 
+            count++;
+            if(count>10)
+            {
+                count=1;
+            }
+        })
+        document.getElementsByClassName('min')[0].addEventListener('click',(e)=>{
+            e.preventDefault();
+            var inputValue = document.getElementById('inc').value=count;
+            var price =Number(document.getElementById('price').value);
+            var total = price * inputValue;
+            document.getElementsByClassName('grand')[0].innerHTML = total; 
+            count--;
+            if(count<=1)
+            {
+                count=1;
+            }
+        })
+
+    </script>
+</body>
+</html>
