@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        <div class="customer">
+            <input type="text" name="" id="" class="mt" placeholder="math">
+            <input type="text" name="" id="" class="py" placeholder="math">
+            <div class="total"></div>
+            <button type="button" class="cal">Calculation</button>
+            <button type="button" class="del">delete</button>
+        </div>
+    </form>
+    <button class="Addf">addField</button>
+    <script>
+        
+
+        var btn = document.getElementsByClassName('cal');
+        var dele = document.getElementsByClassName('del');
+        for(var i=0;i<btn.length;i++)
+        {
+            btn[i].setAttribute('onclick','sum('+i+')');
+            dele[i].setAttribute('onclick','del('+i+')');
+            
+        }
+        function sum(e)
+        {
+            var mt = document.getElementsByClassName('mt');
+            var py = document.getElementsByClassName('py');
+            var total = document.getElementsByClassName('total');
+
+            for(var i=0;i<mt.length;i++)
+            {
+                if(i==e)
+                {
+                    var ftotal = Number(mt[i].value) + Number(py[i].value);
+                    total[i].innerText = ftotal;
+                }
+            }
+        }
+
+        function del(e)
+        {
+            var target = document.getElementById('frm');
+            var deleteBtn  = document.getElementsByClassName('del');
+
+            var i=0;
+            for(i;i<deleteBtn.length;i++)
+            {
+                if(i==e)
+                {
+                    target.removeChild(deleteBtn[i].parentElement);
+                }
+
+            }
+            for (var i = 0; i < btn.length; i++) {
+                
+                dele[i].setAttribute('onclick', 'del(' + i + ')');
+            }
+        }
+        var Addf = document.getElementsByClassName('Addf')[0];
+
+        Addf.addEventListener('click',(e)=>{
+            e.preventDefault();
+            var customerDiv = document.createElement('div');
+            customerDiv.setAttribute('class','customer');
+
+            var melement = document.createElement('input');
+            melement.setAttribute('type','text');
+            melement.setAttribute('class','mt');
+            melement.setAttribute('placeholder','math');
+
+            var pelement = document.createElement('input');
+            pelement.setAttribute('type','text');
+            pelement.setAttribute('class','py');
+            pelement.setAttribute('placeholder','math');
+
+            var celement = document.createElement('button');
+            celement.setAttribute('type','button');
+            celement.setAttribute('class','cal');
+            celement.innerText="calculation";
+
+            var delement = document.createElement('button');
+            delement.setAttribute('type','button');
+            delement.setAttribute('class','del');
+            delement.innerText="delete";
+
+            var telement = document.createElement('div');
+            telement.setAttribute('class','total');
+
+            customerDiv.appendChild(melement);
+            customerDiv.appendChild(pelement);
+            customerDiv.appendChild(celement);
+            customerDiv.appendChild(delement);
+
+            customerDiv.children[2].insertAdjacentElement("beforebegin",telement);
+
+            var target = document.getElementById('frm');
+            target.appendChild(customerDiv);
+
+            for(var i=0;i<btn.length;i++)
+            {
+                btn[i].setAttribute('onclick','sum('+i+')');
+                dele[i].setAttribute('onclick','del('+i+')');
+            }
+        })
+    </script>
+</body>
+</html>

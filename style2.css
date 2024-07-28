@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#login_form{
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 450px/ 2);
+    left: calc(50% - 350px / 2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.5);
+    overflow: hidden;
+    padding: 10px 10px;
+
+}
+.container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* background-color: gray; */
+    grid-template-rows: 100px 1fr;
+    row-gap: 30px;
+    
+}
+
+.icon h1{
+    font-size: 40px;
+    font-family: arial;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 35%;
+    
+}
+
+form{
+    display: grid;
+    grid-auto-rows: 40px;
+    row-gap: 10px;
+}
+form h3{
+    font-size: small;
+    font-family: arial;
+    margin-left: 35px;
+    margin-top: 35px;
+    color: gray;
+    
+}
+
+.inputField{
+    background-color: white;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+    column-gap: 10px;
+    
+}
+
+.inputSubField{
+    width: 90%;
+    padding: 2px;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+   
+    
+}
+.inputSubField input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.forgetField{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 60%;
+
+}
+.buttonfield button{
+    padding: 10px 100px;
+    background: linear-gradient(0deg, #24b1db 0%, #8080ff 46%, #bfbfff 97%, #ffffff 100%);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;   
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+    margin-left: 55px;
+}
+.imgicons h4{
+    font-size: small;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.iconss {
+    column-gap: 15px;
+    text-align: center;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
