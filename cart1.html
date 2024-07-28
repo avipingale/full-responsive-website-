@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .mobilecart-container{
+        width: 80%;
+        height: 80vh;
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px 10px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .mobile-product{
+        width: 40%;
+        height: 100%;
+        background-color: white;
+    }
+    .img-box{
+        width: 100%;
+        height: 80%;
+       
+        /* object-fit: contain; */
+    }
+    .img-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .pro-name{
+        font-family: "Anta", sans-serif;
+        font-weight: 300;
+        font-size:20px;
+    }
+    .cart-btn{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        /* background-color: gray; */
+        justify-content: center;
+        column-gap: 30px;
+        
+       
+    }
+    .btn{
+        padding: 10px 80px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size:20px; 
+        background-color: rgb(67, 1, 105);
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:rgb(41, 4, 63) ;
+    }
+    
+    .details-product{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .main-rate{
+        /* background-color:gray; */
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    .rate{
+        width: 50px;
+        height: 35px;
+        background-color: green;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        
+    }
+    .rate-de{
+        color: gray;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size:15px; 
+    }
+    .mobile-price{
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size:20px; 
+
+      
+    }
+    .description{
+        height: 30%;
+        padding: 10px 10px;
+        color: rgb(105, 103, 103);
+    }
+    .description li{
+        margin-bottom: 10px;
+        
+    }
+    .cart-offer h4 p{
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size:15px; 
+    }
+    .cart-offer i{
+        color: green;
+    }
+
+    @media screen and (max-width:768px){
+        .mobilecart-container{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            overflow: scroll;
+            padding: 5px 5px;
+        }
+        .mobile-product{
+            width: 100%;
+        }
+        .pro-name{
+        font-family: "Anta", sans-serif;
+        font-weight: 300;
+        font-size:15px;
+    }
+    .img-box img{
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+    }
+    .btn{
+        padding: 5px 40px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size:15px; 
+        cursor: pointer;
+    }
+    .details-product{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 5px;
+    }
+}
+  
+</style>
+<body>
+    <div class="mobilecart-container">
+        <div class="mobile-product">
+            <div class="img-box">
+            <img src="mobileimg2.jpg" alt="">
+            </div>
+            <div class="cart-btn">
+                <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="details-product">
+            <div class="pro-name">
+                <h3>Samsung Galaxy S24 Ultra 5G (Titanium Violet, 256 GB)  (12 GB RAM)</h3>
+            </div>
+            <div class="main-rate">
+                <div class="rate">
+                  <p>4.5 <i class="fa-solid fa-star"></i></p>
+                </div>
+                <div class="rate-de">
+                  <p>1,009 Ratings & 170 Reviews</p>
+                </div>
+            </div>
+            <div class="mobile-price">
+                <h1>₹25000/-</h1>
+            </div>
+            <div class="description">
+                <p>Highlights</p>
+                <ul>
+                    <li>12 GB RAM | 256 GB ROM</li>
+                    <li>17.27 cm (6.8 inch) Quad HD+ Display</li>
+                    <li>200MP + 50MP + 12MP + 10MP | 12MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Snapdragon 8 Gen 3 Processor</li>
+                </ul>
+            </div>
+
+            <div class="cart-offer">
+                <h4>Available Offers</h4>
+                <p><i class="fa-solid fa-tag"></i>  Bank OfferGet ₹25* instant discount for the 1st Flipkart Order using Shopper UPI<a href="#">T&C</a></p>
+                <p><i class="fa-solid fa-tag"></i>  Bank OfferFlat ₹1,250 off on ICICI Bank Debit Card EMI Transactions, on orders of ₹30,000 and above<a href="#">T&C</a></p>
+                <p><i class="fa-solid fa-tag"></i>  Bank OfferFlat ₹1,250 off on ICICI Bank Debit Card EMI Transactions, on orders of ₹30,000 and above<a href="#">T&C</a></p>
+                <p><i class="fa-solid fa-tag"></i>  Partner OfferSign-up for Shopper Pay Later & get free Times Prime Benefits worth ₹10,000*<a href="#">Know More</a></p>
+                <p><i class="fa-solid fa-tag"></i>  Buy More, Save MoreBuy worth ₹8000 save ₹6500See all products<a href="#">T&C</a></p>
+                
+                
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

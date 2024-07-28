@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        
+        
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(1, 201, 240);
+        
+        
+    }
+</style>
+<body>
+    
+    <div class="box"></div>
+    <div class="box1"></div>
+
+    <script>
+    //     var a  =document.getElementsByClassName('box')[0];
+    //     var counter = 0;
+        
+    //    var storeAnim = setInterval(anima,500);
+    //     function anima()
+    //     {
+    //         counter+=50;
+    //         a.style.transform = "translateX("+counter+"px)";
+
+    //         if(counter==1200)
+    //         {
+    //             clearInterval(storeAnim);
+    //         }
+    //     }
+
+        // var b =document.getElementsByClassName('box1')[0];
+        // setTimeout(dipNone,2000);
+        
+        // function dipNone()
+        // {
+        //     b.style.display="none";
+           
+        // }
+        
+        window.addEventListener('resize',function(e)
+        {
+           var wHeight = window.innerWidth;
+           if(wHeight<400)
+           {
+            document.body.style.backgroundColor="red";
+           }else if(wHeight<600)
+           {
+            document.body.style.backgroundColor="blue";
+           }
+        })
+
+    </script>
+
+</body>
+</html>

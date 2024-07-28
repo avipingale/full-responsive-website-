@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="frm">
+        <div class="inputField">    
+            <input type="text" name="" id="fname">
+        </div>
+    </form>
+    <button id="addField">Add Field</button>
+    <button id="show data">show Data</button>
+
+    <script>
+        
+        var add = document.getElementById('addField');
+    add.addEventListener('click',function(e){
+        e.preventDefault();
+
+        
+        var celement1=document.createElement('div');
+        celement1.setAttribute('class','inputField');
+        
+
+        var celement2=document.createElement('input');
+        celement2.setAttribute('class','fn');
+        celement2.setAttribute("placeholder","first_name");
+        celement2.setAttribute("type","text");
+
+        celement1.appendChild(celement2);
+
+        var  target = document.getElementsByClassName('inputField')[0];
+        // target.insertAdjacentElement("afterend",celement1);
+
+        // var target = document.forms['frm'];
+
+        // target.appendChild(celement1);
+        // target.appendChild(celement1);
+
+        // target.insertAdjacentHTML("afterbegin","<div class='inputField'></div>");
+        
+
+      
+    })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .cart_containers {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .container_parent {
+        position: relative;
+        margin: 0 auto;
+        width: 96%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: 1fr;
+        padding: 10px 10px;
+    }
+
+    .cart_container,
+    .price_container {
+
+        overflow: scroll;
+    }
+
+    .cart_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+    }
+
+    .cart_box {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px 20px;
+        grid-auto-rows: 1fr;
+        height: auto;
+        align-items: flex-start;
+
+    }
+
+    .cart-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .cart-name h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        background-color: white;
+    }
+
+    .cart-name p {
+        list-style: none;
+
+    }
+
+    .Ratings {
+        width: 100%;
+        height: 40%;
+        /* background-color: gray; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .cart-name {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    td {
+        padding: 10px;
+        font-family: "Anta", sans-serif;
+        color: rgb(63, 63, 63);
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    td:last-child {
+        text-align: right;
+    }
+
+    tr:last-child td {
+        text-align: center;
+        /* background-color: gray; */
+    }
+
+    table button {
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        background-color: rgb(67, 1, 105);
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .product_billings {
+        
+        font-size: 20px;
+
+    }
+
+    .product_billings td {
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    @media screen and (max-width:700px) {
+        .container_parent {
+            position: fixed;
+          
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        
+
+    .container_parent {
+        position: fixed;
+        margin: 0 auto;
+        width: 96%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 10px 10px;
+    }
+
+        .cart_box {
+            display: grid;
+            grid-template-columns: 100px 1fr 40px;
+            height: 130px;
+            background-color: white;
+        }
+
+        .cart-quantity {
+            display: grid;
+            grid-template-columns: 20px 1fr 20px;
+            column-gap: 2px;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .cart-quantity input {
+            width: 100%;
+        }
+
+        .cart-quantity button {
+            font-size: 8px;
+
+        }
+
+        .cart-name h2 {
+            font-size: 12px;
+        }
+
+        .cart-name p {
+            margin: 0px;
+            font-size: 8px;
+        }
+
+        .Ratings {
+            font-size: 12px;
+        }
+
+
+        table {
+            width: 100%;
+            height: auto;
+
+        }
+
+        td {
+            padding: 5px;
+            font-family: "Anta", sans-serif;
+            color: rgb(63, 63, 63);
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        tr:last-child td {
+            text-align: center;
+            /* background-color: gray; */
+        }
+
+        table button {
+            padding: 5px 20px;
+            border-radius: 2.5px;
+            font-size: 10px;
+
+
+        }
+
+        .product_billings {
+            font-size: 10px;
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="cart_containers">
+        <div class="container_parent">
+            <div class="cart_container">
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="cart_box">
+                    <div class="cr cart-img">
+                        <img src="mobileimg2.jpg" alt="">
+                    </div>
+                    <div class="cr cart-name">
+                        <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                        <p>12 GB RAM | 512 GB ROM<br>
+                            17.27 cm (6.8 inch) Quad HD+ Display<br>
+                            200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                            5000 mAh Battery<br>
+                            Snapdragon 8 Gen 3 Processor</p>
+                        <div class="Ratings">
+                            <p>Rating:
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h2>₹25000/-</h2>
+                        </div>
+                    </div>
+                    <div class="cr cart-quantity">
+                        <button class="cr-btn">-</button>
+                        <input type="text" class="inp">
+                        <button class="cr-btn">+</button>
+                    </div>
+                    <div class="cr cart-delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="price_container">
+                <table class="product_billings">
+                    <caption>Product Billings</caption>
+                    <th>Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </table>
+
+                <table>
+                    <caption>
+                        <h2>Price details</h2>
+                    </caption>
+                    <tr>
+                        <td>Total Item</td>
+                        <td class="qitem"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Qty</td>
+                        <td class="qty"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>₹ : <span class="total_price"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td><span class="d_iscount">10</span>%</td>
+                    </tr>
+                    <tr>
+                        <td>Discount Amount</td>
+                        <td>₹ :<span class="d_amt"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>GST TAX</td>
+                        <td><span class="tax">18</span>%</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Tax Amount</td>
+                        <td>₹ :<span class="tax_amt"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Delivery Charge</td>
+                        <td>₹ : <span class="d_charge">100</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Amount</td>
+                        <td>₹ : <span class="grand_total"></span></td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="2"><button>Place Order</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

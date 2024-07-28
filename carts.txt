@@ -1,0 +1,717 @@
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="cr cart-img">
+                    <img src="mobileimg2.jpg" alt="">
+                </div>
+                <div class="cr cart-name">
+                    <h2>Samsung Galaxy S24 Ultra 5G<br></h2><br>
+                    <p> 12 GB RAM | 512 GB ROM<br>
+                        17.27 cm (6.8 inch) Quad HD+ Display<br>
+                        200MP + 50MP + 12MP + 10MP | 12MP Front Camera<br>
+                        5000 mAh Battery<br>
+                        Snapdragon 8 Gen 3 Processor</p>
+                        <div class=" ">
+                           <p>Rating:
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </p>
+                           <h2>₹25000/-</h2>
+                        </div>
+                </div>
+                <div class="cr cart-quantity">
+                    <button class="cr-btn">-</button>
+                    <input type="text" class="inp">
+                    <button class="cr-btn">+</button>
+                </div>
+                <div class="cr cart-delete">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+
+        
+  
+           

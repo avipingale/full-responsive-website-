@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+   
+    .confirm{
+        width: 350px;
+        height: 300px;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 350px / 2);
+        left: calc(50% - 350px / 2);
+        padding: 10px 10px;
+        border-radius: 10px;
+        z-index: 1;
+        
+    }
+    .container{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        row-gap: 20px;
+    }
+    .container i{
+        margin-top: 20px;
+        font-size: 60px;
+        text-align: center;
+    }
+    .icon h1{
+        font-size: 30px;
+        font-family: arial;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .icon p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        width: 100%;
+        height: 40px;
+        /* background: #000; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .confirm{
+        display: block;
+    }
+
+</style>
+<body>
+    <div class="confirm">
+        <div class="container">
+            <i class="fa-sharp fa-solid fa-question"></i>
+            <div class="icon">
+                <h1>Confirm</h1>
+                <p>Are you sure want to submit your form?</p>
+            </div>
+            <div class="btn">
+                <button>Yes</button>
+                <button>No</button>
+            </div> 
+        </div>
+    </div>
+
+    <form action="" id="frm">
+        <input type="text" name="" id="user" placeholder="username">
+        <input type="text" name="" id="pass" placeholder="password">
+        <input type="submit" id="login">
+    </form>
+    <div class="ealert"></div>
+    <script>
+
+        var login  = document.getElementById('login');
+        login.addEventListener('click',function(e){
+            e.preventDefault();
+            // regular express
+
+            var username = document.getElementById('user').value;
+            var pattern = /^[a-zA-Z]{4,6}[0-9]{2}/; 
+
+            var password = document.getElementById('pass').value;
+            var pattern1 = /^[0-9]{4}/; 
+           
+
+            if(!(pattern.test(username)))
+            {
+               
+                document.getElementsByClassName('ealert')[0].innerHTML="username is wrong";
+                setTimeout(() => {
+                    document.getElementsByClassName('ealert')[0].innerHTML="";
+                }, 1000);
+
+            }else if(!(pattern1.test(password)))
+            {
+
+                document.getElementsByClassName('ealert')[0].innerHTML="password is wrong";
+                setTimeout(() => {
+                    document.getElementsByClassName('ealert')[0].innerHTML="";
+                }, 1000);
+            }else{
+
+                document.getElementsByClassName('confirm')[0].style.display="block";
+
+                document.getElementsByClassName('btn')[0].children[0].addEventListener('click',submit);
+                document.getElementsByClassName('btn')[0].children[1].addEventListener('click',cancel);
+
+            }
+            
+       
+        })
+
+        function submit()
+        {
+            document.getElementsByClassName('confirm')[0].style.display="none";
+            document.forms['frm'].reset();
+        }
+
+        function cancel()
+        {
+            document.getElementsByClassName('confirm')[0].style.display="none";
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
