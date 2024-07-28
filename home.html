@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        width: 96%;
+        height: 600px;
+        margin: 0 auto;
+        background-color: gray;
+        display: grid;
+        grid-template-columns: repeat(2,1fr) 200px;
+        /* grid-template-rows: repeat(2,100px); */
+        grid-auto-rows: 1fr;
+        grid-gap: 10px 10px;
+        /* align-items:flex-start; */
+        /* align-content: space-between; */
+        justify-content: space-between;
+
+
+    }
+    .box{
+        border: 1px solid  black;
+        box-sizing: border-box;
+    }
+    .box:nth-child(1){
+        grid-row: 1;
+        grid-column: 1/span 2;
+    }
+    .box:nth-child(2){
+        grid-row: 1/span 7;
+    }
+    .box:nth-child(3){
+       
+        grid-column: 1;
+        grid-row: 2/span 4;
+    }
+    .box:nth-child(4){
+        grid-column: 2;
+        grid-row: 2/span 4;
+    }
+    .box:nth-child(5){
+        grid-column: 1/span 2;
+    }
+    .box:nth-child(6){
+        grid-column: 1/span 2;
+    }
+    
+</style>
+<body>
+    <header>
+        <div class="box">item1</div>
+        <div class="box">item2</div>
+        <div class="box">item3</div>
+        <div class="box">item4</div>
+        <div class="box">item5</div>
+        <div class="box">item6</div>
+    </header>
+    
+</body>
+</html>
