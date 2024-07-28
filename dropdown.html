@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-menu li{
+        box-sizing: border-box;
+        /* background-color: gray; */
+        width: 60px;
+        height: 30px;
+        margin: 10px 10px;
+        border: 1 px solid black;
+    }
+   
+    ul li ul{
+        display:none;
+    }
+    .db{
+        display: block;
+    }
+</style>
+<body>
+    
+    <ul class="main-menu">
+        <li>Category
+            <ul class="menus">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        var a  = document.getElementsByTagName('li')[0];
+        a.addEventListener('click',()=>{
+            var b = document.getElementsByTagName('li')[0].children[0];
+            
+            b.classList.toggle('db');
+            
+        })
+        window.addEventListener('mouseup',function(event)
+        {
+            var box  = document.getElementsByClassName("main-menu")[0];
+            var box1  = document.getElementsByClassName("menus")[0];
+            if(event.target!=box && event.target.parentNode !=box)
+            {
+                box1.classList.remove('db');
+            }
+        })
+    </script>
+</body>
+</html>
