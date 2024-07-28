@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+    .slide-frame{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 90%;
+        height: 600px;
+        margin: 10px auto;
+        background-color: gray;
+    }
+    .slide-image{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+
+    }
+    .slide-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+</style>
+<body>
+    
+    <div class="slide-frame">
+        <div class="slide-image">
+            <img src="image1.png">
+        </div>
+        <div class="slide-image">
+            <img src="image2.jpg" alt="">
+        </div>
+        <div class="slide-image">
+            <img src="image4.png" alt="">
+        </div>
+    </div>
+    <button type="button" class="btn1" onclick="minSlide(-1);"><</button>
+    <button type="button" class="btn2" onclick="plusSlide(1);">></button>
+    <script>
+        var slideIndex = 1;
+        function plusSlide(n)
+        {
+            slideShow(slideIndex+=n);
+        }
+        function minSlide(n)
+        {
+            slideShow(slideIndex-=n);
+        }
+        setInterval(slideShow,2000);
+        function slideShow(n)
+        { 
+            var imgSlide = document.getElementsByClassName('slide-image');
+            var i=0;
+            
+            if(n>imgSlide.length)
+            {
+                slideIndex=1;
+            }
+           
+         
+            for(i=0;i<imgSlide.length;i++)
+            {
+                imgSlide[i].style.display="none";
+            }
+            
+            imgSlide[slideIndex-1].style.display="block";
+            slideIndex++;
+
+            if(slideIndex>imgSlide.length)
+            {
+                slideIndex=1;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

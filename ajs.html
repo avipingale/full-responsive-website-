@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="Myform">
+        <input type="text" name="" id="title" placeholder="title">
+        <input type="text" name="" id="body" placeholder="body">
+        <input type="text" name="" id="userId" placeholder="userId">
+        <input type="submit" name="" id="saveForm">
+    </form>
+
+    <!-- <p id="demo">here we load data.</p>
+    <button onclick="loadData();">click me</button>
+    -->
+    <script>
+        // function loadData()
+        // {
+        //     var xhttp = new XMLHttpRequest();
+        //     xhttp.onreadystatechange = function()
+        //     {
+        //         if(this.readyState==4 && this.status==200)
+        //         {
+        //             document.getElementById('demo').innerHTML=(this.responseText);
+        //             console.log(this.responseText);
+        //         }else if(this.readyState==4 && this.status==404)
+        //         {
+        //             document.getElementById('demo').innerHTML = "file not found..";
+        //         }
+        //     }
+        //     xhttp.open('GET','content/mdata.json',true);
+        //     xhttp.send();
+        // }
+        
+        document.getElementById('saveForm').addEventListener('click',(e)=>{
+            e.preventDefault();
+            var obj = {
+                title:document.getElementById('title').value,
+                body:document.getElementById('body').value,
+                userId :document.getElementById('userId').value,
+            }
+            fetch("content/mdata.json",{
+            method:"POST",
+            body:JSON.stringify(obj),
+            headers:{
+                "Content-type":"application/x-www-form-urlencoded; charset=UTF-8",
+            },
+        }).then((Response)=>Response.json()).then((json)=>console.log(json));
+        })
+
+
+        // let test = async()=>
+        // {
+        //     await console.log("1:message");
+        //     console.log("2:message");
+        //     await console.log("4:message");
+        //     console.log("6:message");
+        // }
+        // console.log("5:message");
+        // test();
+        // console.log("3:message");
+
+        // let age1 = Symbol();
+        // let user ={
+        //     name:"prasad",
+        //     [age1]:26,
+        // };
+        // for(var i in user){
+        //     console.log(i);
+        // }
+        // console.log(JSON.stringify(user));
+
+        // let Number=[100,200,300];
+
+        // console.log(typeof Number[Symbol.iterator]);
+
+        // let itr = Number[Symbol.iterator]();
+
+        // console.log(itr.next());
+        // console.log(itr.next());
+        // console.log(itr.next().value);
+        // console.log(itr.next().done);
+
+        // function NumberIterator(a)
+        // {
+        //     var nextName = 0;
+        //     return{
+        //         next()
+        //         {
+        //             return{
+        //                 value:a[nextName++],
+        //                 done:false
+        //             }
+        //         }
+        //     }
+        // }
+        // let Number =[100,200,300];
+        // let itr = NumberIterator(Number);
+
+        // console.log(itr.next());
+        // console.log(itr.next());
+        // console.log(itr.next());
+        // console.log(itr.next());
+
+        // function *generate()
+        // {
+        //     console.log("first message");
+        //     yield "yield no1";
+        //     console.log("second message");
+        //     yield "yield no2";
+        // }
+        // let g = generate();
+        // console.log(g.next());
+        // console.log(g.next());
+
+        // function *generate()
+        // {
+        //     yield "yield no1";
+        //     yield "yield no2";
+        //     yield "yield no3";
+            
+        // }
+        // let g=generate();
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+    //   function *generate()
+    //   {
+    //     yield 55;
+    //     yield* ['node','angular','react'];
+    //   }
+    //   let g = generate();
+    //   console.log(g.next());
+    //   console.log(g.next());
+    //   console.log(g.next());
+    //   console.log(g.next());
+    //   console.log(g.next());
+
+//    try{
+//     babla();
+//    }catch(error)
+//    {
+//     console.log(error.message);
+//     console.log(errror.stack);
+//     console.log(error.name);
+//    }
+
+
+     
+
+        
+        
+
+
+    </script>
+    
+           
+
+</body>
+</html>

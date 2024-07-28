@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1.javascript string template
+    // var a = "huzaifa";
+    // var b = "shaikh";
+    // var c = "anjuman islam hign school";
+    // function fullname(fname,lname)
+    // {
+    //     return `${fname} + {lname}`;
+    // }
+    // document.write(`hii ${fullname(a,b)}`);
+    // document.write(`first_name ${a} last_name ${b} school ${c}`);
+
+    // // 2.Arrow function
+    // let arrowFunction = ()=>{
+    //     alert('msg');
+    // }
+    // arrowFunction();
+
+    // 3.args method rest operator
+    // sum("Advance javascript",50,30,60,90,30,60,40);
+    // function sum(name,...args)
+    // {
+    //     let sum = 0;
+    //     for(let i in args)
+    //     {
+    //         sum+=args[i];
+    //     }
+    //     console.log(name + " "+sum);
+    // }
+
+    // 4.spread operator
+    // var arr =[10,20,30,40,50];
+    // arr.push(60);
+
+    // var a1 = [10,20];
+    // var a2 = [30,40,50];
+    // a1.push(90);
+    // var a3 = [...a1,...a2];
+    // console.log(a3);
+
+    // 5.object args method
+    // var obj1 = {
+    //     name:"huzaifa",
+    //     contact:"7028"
+    // }
+    // var obj2={
+    //     age:"25"
+
+    // }
+    // var obj3 = {...obj1,...obj2}
+    // console.log(obj3);
+
+    // 6.object literals
+
+    //6.1 let n = "name";
+    // var obj = {
+    //     [n]:"huzaifa",
+    //     course:"bscit"
+    // }
+    // console.log(obj.course);
+
+    //6.2
+    // let  fn = "student";
+    // var obj1 = {
+    //     [fn+"name"]:"huzaifa",
+    //     course:"bscit",
+    //     fname()
+    //     {
+    //         return `fname ${this.studentname}`;
+    //     }
+    // }
+    // console.log(obj1.studentname,obj1.fname());
+
+    // 6.3
+    // let first_name = "huzaifa";
+    // let last_name = "shaikh";
+
+    // function student_name(fname,lname)
+    // {
+    //     return{fname,lname}
+    // }
+    // let FullName = student_name(fname,lname);
+    // console.log(FullName);
+
+    // 7.destructuring Array
+    // let user = ["huzaifa",26,"mumbai",['male','25000']];
+
+    // let [uname,age, city,[gender,salary]]=user;
+    // console.log(uname);
+    // console.log(age);
+    // console.log(city);
+    // console.log(gender);
+
+    // 7.2
+    let [name,...args]=user;
+    console.log(name,args);
+
+    function user([name,age,city])
+    {
+        console.log(name);
+        console.log(age);
+        console.log(city);
+    }
+    user(["huzaifa",26,"mumbai"]);
+    
+
+
+    
+     
+
+  </script>
+</body>
+</html>

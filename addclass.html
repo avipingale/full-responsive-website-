@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>orange</li>
+    <li>apple</li>
+    <li>grapes</li>
+    <li>banana</li>
+   </ul>
+   <ul id="list1">
+        <li>orange</li>
+        <li>Home</li>
+        <li>Gallery</li>
+        <li>Help</li>
+   </ul>
+   <script>
+    // equal node 
+    var list1 = document.getElementById('list').firstElementChild;
+    var list2 = document.getElementById('list1').children[0];
+
+    var check = list1.isEqualNode(list2);
+    console.log(check);
+    // clone node
+
+    // var Target = document.getElementById('list').children[0];
+    // var copyElement = Target.cloneNode(true);
+    // console.log(copyElement);
+
+    // var setT =document.getElementById('list1');
+
+    // setT.appendChild(copyElement);
+
+    // replace child
+    // var newElement = document.createElement('li');
+    // newElement.innerText="wow new text";
+
+    // var Target = document.getElementById('list1');
+    // var oldelement = Target.children[0];
+
+    // Target.replaceChild(newElement,oldelement);
+   </script>
+</body>
+</html>
