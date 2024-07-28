@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+   .mobiles{
+    height: 726px;
+    margin-top: 40px;
+    padding: 0px;
+    position: absolute;
+    top:calc(50% - 726px / 2);
+    left: calc(50% - 428px / 2);
+    overflow: hidden;
+    border-radius: 38px;
+   }
+  .mobile-container{
+    height: 726px;
+    width: 380px;
+    border: 3px solid black;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    border-radius: 38px;
+    box-shadow: 5px 20px 50px #000;
+    z-index: 9999;
+    /* display: none; */
+  }
+  
+  .header{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    background-color:#0f0c29;
+    border-top-right-radius: 38px;
+    border-top-left-radius: 38px;
+    z-index: 9999;
+  }
+  .top-div{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(83, 77, 77);
+    margin-left: 30%;
+    left: 33%;
+    border-radius: 15px;
+    z-index: 999;
+  
+   
+  }
+  .parts{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    width: 40%;
+    height: 20px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    z-index: 999;
+    
+
+  }
+  .time{
+    width: 40px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: white;
+    z-index: 999;
+  
+  }
+  .time p{
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .parts i{
+    font-size: 18px;
+    color: white;
+  }
+  .parts1 i{
+    left: 80%;
+    bottom: 96%;
+  }
+  .apps{
+   position: relative;
+   top: 79%;
+   left: 5px;
+    width: 97%;
+    height: 70px;
+    background-color: rgba(234, 234, 234, 0.842);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 2px;
+    gap: 15px;
+    z-index: 1;
+  }
+  .mob{
+    margin-left: 5px;
+  }
+  .menus{
+    height: 500px;
+    width: 100%;
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    /* display: none; */
+  }
+  .menus-apps{
+    margin-top: 20px;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,70px);
+    row-gap: 25px;
+    padding: 10px;
+    display: none;
+    
+  }
+  .menus-apps1{
+    margin-top: 20px;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,70px);
+    row-gap: 25px;
+    padding: 10px;
+    /* display: none; */
+  }
+  .mr{
+    color: white;
+  }
+  .buttons{
+  height: 40px;
+  width: 17.5%;
+  position: fixed;
+  top: 84%;
+  border-bottom: 3px solid black;
+  border-bottom-right-radius: 38px;
+  border-bottom-left-radius: 38px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  padding: 10px;
+  background-color:white;
+  margin-right: 10px;
+  z-index: 9999;
+ }
+.chrome-page{
+    position: relative;
+    bottom: 695px;
+    /* height: 690px; */
+    height: 90vh;
+    width: 380px;
+    border: 3px solid black;
+    border-bottom-right-radius: 38px;
+    border-bottom-left-radius: 38px;
+    background-color: white;
+    z-index: 1;
+    display: none;
+}
+  .chrome-head{
+    height: 40px;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+
+  }
+  .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background-color:crimson;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+  }
+  .circle p{
+    font-size: 20px;
+    justify-content: center;
+  }
+  .chrome-head i{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .google-name{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #000000; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .google-name img{
+    width: 50%;
+  }
+ .search-bar{
+  width: 90%;
+  height: 50px;
+  background-color:cornflowerblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin-left: 20px;
+  
+ }
+ .search-bar input{
+  border-bottom: 1px solid black;
+  height: 50px;
+  width: 100%;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  /* margin-left: 20px; */
+ }
+ 
+ .search-bar i{
+  font-size: 20px;
+  margin-top: 14px;
+  
+ }
+ .search-bar img{
+  padding: 10px;
+ }
+ .chrome-app{
+  width: 20px;
+  height: 90px;
+  /* background-color: red; */
+  box-shadow: 10px 20px 50px rgb(169, 168, 168);
+  /* border: 1px solid black; */
+  justify-content: center;
+  position: fixed;
+  top: 45%;
+  left: 49%;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  /* padding: 20px; */
+ }
+ .chrome-app img{
+  padding: 10px;
+  
+ }
+ .br p{
+  font-size: 12px;
+  margin-left: 5px;
+ }
+
+ 
+ .advertise{
+  width: 370px;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  padding: 5px 5px;
+  margin-left: 5px;
+  box-shadow: 10px 20px 50px rgb(169, 168, 168);
+  /* background-color: red; */
+ }
+ .advertise p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial;
+ }
+ 
+ 
+    
+</style>
+<body>
+  <div class="mobiles">
+    <div class="mobile-container">
+       <div class="header">
+         <div class="time">
+            <p>9:41</p>
+         </div>
+         <div class="top-div">
+          <i class="fa-solid fa-camera-web"></i>
+       </div>
+         <div class="parts">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+         </div>
+        </div>
+         <div class="apps">
+            <div class="mob apps1">
+                <img src="icons8-phone.svg" alt="">
+                <p>Phone</p>
+           </div>
+            <div class="mob apps2">
+                <img src="icons8-contact-48.png" alt="">
+                <p>Contact</p>
+           </div>
+            <div class="mob apps3">
+                <img src="icons8-chrome.svg" alt="">
+                <p>Chorme</p>
+           </div>
+            <div class="mob apps4">
+             <img src="icons8-message-48.png" alt="">
+             <p>Message</p>
+           </div>
+            <div class="mob apps5">
+             <img src="icons8-image-gallery-48.png" alt="">
+             <p>Gallery</p>
+           </div>
+        </div>
+       <div class="buttons">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-square"></i>
+        <i class="back fa-solid fa-arrow-left"></i>
+      </div> 
+    </div>
+    <div class="chrome-page">
+      <div class="chrome-head">
+        <div class="circle">
+          <p>P</p>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <div class="google-name">
+        <img src="google-logo-9834.png" alt="">
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Search or type URL">
+        <i class="fa-solid fa-microphone"></i>
+        <img src="qr_code_scanner_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </div>
+      <div class="chrome-app">
+        <div class="br app1">
+        <img src="icons8-facebook-48.png" alt="">
+        <p>Facebook</p>
+      </div>
+      <div class="br app2">
+        <img src="icons8-youtube-48.png" alt="">
+        <p>YouTube</p>
+      </div>
+      <div class="br app3">
+        <img src="icons8-wikipedia-48.png" alt="">
+        <p>Wikipedia</p>
+      </div>
+      <div class="br app4">
+        <img src="icons8-instagram-48.png" alt="">
+        <p>Instagram</p>
+      </div>
+      </div>
+      <div class="advertise">
+        <div class="video">
+          <iframe width="100%" height="40%" src="https://www.youtube.com/embed/iBwFecurrEk?si=TBwMifr4LnrxE7zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>IPL Match 24 Highlights | Gujarat Titans Beat Rajasthan Royals By Three Wickets</p>
+      </div>
+
+    </div>
+  </div>
+   
+
+</body>
+<script>
+    var chromeopen = document.getElementsByClassName('apps3')[0];
+    chromeopen.addEventListener('click',()=>{
+      
+      var openchrome = document.getElementsByClassName('chrome-page')[0].style.display="block";
+      var apps = document.getElementsByClassName('apps')[0].style.display="none";
+  
+    })
+  
+    var backbutton = document.getElementsByClassName('back')[0];
+    backbutton.addEventListener('click',()=>{
+      var chromepage = document.getElementsByClassName('chrome-page')[0].style.display="none";
+      var apps = document.getElementsByClassName('apps')[0].style.display="flex";
+    })
+  </script>
+</html>

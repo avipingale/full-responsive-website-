@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    /* *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    } */
+   
+    .container_part{
+        width: 90%;
+        height: auto;
+        margin-left: 70px;
+        padding: 5px 5px;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(5,320px);
+        grid-template-rows: repeat(2,500px);
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 10px;
+        border-bottom: 1px solid black;
+        overflow: hidden;
+    }
+    .parts{
+        display: grid;
+        grid-template-rows: 400px 100px;
+        /* border: 1px solid black; */
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        display: none;
+       
+           
+    }
+    .parts:hover{
+        transform: scale(1.02);
+        transition: .1s;
+        transition-timing-function: ease-in-out;
+        /* border: 2px solid rgb(67, 1, 105); */
+       box-shadow: 0px 0px 10px 2px rgb(67, 1, 105);
+    }
+
+    .imgbox img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        padding-left: 10px;
+       
+    }
+    .desc ul{
+        list-style: none;
+        color: gray;
+    }
+    .desc li{
+        color: black;
+    }
+   
+    .price-rate{
+      /* background-color: gray; */
+        /* margin-left: 10px; */
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .description{
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .3);
+    }
+    .description li{
+        font-size: 12px;
+        color: gray;
+        list-style: none;
+        padding: 10px 5px;
+    }
+    .description li:last-child{
+        color: black;
+    }
+
+    /* footer start */
+    .container5 {
+                width: 100%;
+                height: 400px;
+                
+
+                background-color:rgb(22, 21, 21);
+                padding: 10px 10px;
+
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .conta1 {
+                width: 100%;
+                height: 100%;
+                
+                display: flex;
+                column-gap: 10px;
+                margin: 0 auto;
+                justify-content: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+                padding: 10px 10px;
+                flex-grow: 1;
+
+            }
+
+            .about:nth-child(5) {
+                border-left: 1px solid rgba(255, 255, 255, 0.54);
+                display: grid;
+                flex-direction: column;
+                align-content: space-between;
+
+            }
+
+            .about {
+                width: 300px;
+                height: 100%;
+                padding: 5px 5px;
+                text-align: center;
+            }
+
+            .about h4 {
+                text-align: left;
+                color: chocolate;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+
+
+            }
+
+            .social {
+                text-align: left;
+            }
+
+            .social i {
+                color: chocolate;
+            }
+
+            .about a {
+                display: block;
+                padding: 5px 5px;
+                text-align: left;
+                color:white;
+                font-family: arial;
+                text-decoration: none;
+
+            }
+
+            .copyright {
+
+                width: 100%;
+                height: 40px;
+                display: grid;
+                column-gap: 10px;
+                margin: 0 auto;
+                justify-content: center;
+                grid-template-columns: repeat(4, .8fr) 300px 400px;
+
+            }
+
+            .foot {
+                width: 100%;
+                background-color: rgb(22, 21, 21);
+                padding: 10px 10px;
+                text-align: center;
+                display: flex;
+                column-gap: 10px;
+            }
+
+            .foot p {
+                color:white;
+            }
+
+            .foot i {
+                color: chocolate;
+            }
+            /* footer end */
+
+            .pages{
+                width: 100%;
+                height: 80px;
+             
+                justify-content: center;
+                box-shadow: 0px 0px 2px 1px rgba(139, 137, 137, 0.3);
+            
+            }
+           
+            
+            
+            .anchor{
+                
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                
+               
+            }
+            .anchor a{
+                font-size: 18px;
+                padding: 0px 10px;
+                color: black;
+                font-family: "Anta", sans-serif;
+            
+            }
+            .anchor a:hover{
+                background-color: rgb(67, 1, 105);
+                color: white;
+                box-sizing: border-box;
+                border-radius: 15px;
+            }
+
+            .btn-div{
+                text-align: center;
+            }
+
+
+            .adder{
+                padding: 10px 20px;
+                font-size: 20px;
+                
+            }
+
+           
+
+   
+</style>
+<body>
+  
+    <div class="container_part">
+    
+    <div class="parts">
+        <div class="imgbox">
+            <img src="shirt1.jpg" alt="">
+
+        </div>
+           
+    <div class="desc">
+       <ul>SOLSTICE
+        <li>Men Boxy Fit Self Spread Collar Casual...</li>
+       </ul>
+       <div class="price-rate">
+        <li>₹: 500/-</li> 
+        <li>₹500</li>
+        <li>Size- S,L,XL,XXL</li>
+       </div>
+      </div>
+          </div>
+
+
+          <div class="parts">
+            <div class="imgbox">
+                <img src="shirt2.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>KYK
+            <li>MeN Self Design Round Neck Poly...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 297/-</li> 
+            <li>₹749</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+          </div>
+
+
+         <div class="parts">
+            <div class="imgbox">
+                <!-- <i class="fa-solid fa-heart"></i> -->
+                <img src="shirt3.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>WOXEN
+            <li>Men Regular Fit Solid Spread Coll...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 380/-</li> 
+            <li>₹1000</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+         </div>
+
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt4.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>JINIK
+            <li>MeN Regular Fit Solid Cut Away...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 499/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+        
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt5.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt6.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men slim Fit Stirpped Collar Casual Shirt...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 297/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt7.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 350/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt8.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 300/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt9.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 400/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt10.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 399/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+            
+        </div>
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt11.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 380/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt12.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt13.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt14.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt15.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt16.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt17.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt18.jpg" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt19.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt20.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt21.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt22.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt23.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt24.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>
+        <div class="parts">
+            <div class="imgbox">
+                <img src="shirt25.png" alt="">
+    
+            </div>
+               
+        <div class="desc">
+           <ul>Clinch Fashion
+            <li>Men Regular Fit Checked slim...</li>
+           </ul>
+           <div class="price-rate">
+            <li>₹: 370/-</li> 
+            <li>₹999</li>
+            <li>Size- S,M,L,XL,XXL</li>
+           </div>
+        </div>
+        </div>  
+    </div>
+    <div class="btn-div">
+     <button class="adder" onclick="adders(event);">add more</button>
+    </div>
+    <div class="pages">
+        <span>Pages 1 of 22</span>
+        <nav class="anchor">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">
+                <span>Next</span>
+            </a>
+        </nav>
+    </div>
+ 
+    <div class="description">
+        <p>Browse Through Latest Topwear for Men, Women, and Kids</p>
+        <li>Are you looking for ways to refresh your wardrobe? Stay up-to-date with the latest fashion trends by shopping for topwear from your favorite online shopping site Flipkart. <a href="#">Tops, shirts, vests, tank tops, blouses, T-shirts,</a> crop tops, and more, name it and you can find the one you’re looking for on an online shopping store. Browse through the vast collection of men’s wear, women’s wear, and kid’s wear online and enjoy a hassle-free online shopping experience. You can avail amazing deals and discounts on your purchases when you shop online. Also, these clothes will be safely delivered to your doorstep in a couple of days. Look stunning and stylish at every event, party, or occasion by wearing trendy tops. Pair them with coordinating bottom wear and the right kind of footwear, and be ready to receive a ton of compliments wherever you go. When you wear the right type of clothing, you can nail any look, be it casual, formal, or party wear. </li>
+        <li>Explore Topwear Collections Onlin</li>
+        <li>Keep up with the changing fashion trends by shopping for the best men’s wear from your favorite e-commerce store. Check out the amazing collection of T-shirts for men that are offered by trending brands, such as FastColors, Try This, Smartees, Tripr, Wildcraft, Wrangler, Levi's, Lee, U.S. Polo Assn., W, Peter England, and more. You can buy these T-shirts in different neck types, like polo neck, button-down, shawl neck, collared neck, cowl neck, and more. You can also check out formal, casual, loungewear, beachwear, party wear shirts, and more online. Browse through the huge collection of shirts for men that are offered by popular brands, such as Highlander, Rope, Peter England, Levi's, Asian & Fitch, Metronaut, and more. Also, check out some of the classy and stylish jackets, coats, blazers, and sweaters online.</li>
+        <li>Whether you’re looking for office wear, party wear, casual wear, or home wear, online shopping sites have all types of tops that you’re looking for. Check out the trendy and sophisticated women’s tops online that are sold by brands, such as Vero Moda, People, Fleximaa, U&F, Tokyo Talkies, Harpa, Rebound, Wrangler, Levi's, Lee, and more. You can buy shirts and T-shirts for women in solid colors or go for printed ones as well. Browse through the plethora of women’s shirts and choose the ones that best suit your sense of style.</li>
+        <li>You can also buy stylish topwear for kids from an online store. You can browse through the fabulous collection of kid’s T-shirts and kid’s shirts and buy the ones that will best suit your little ones. Brands, such as Miss & Chief, Gkidz, FabTag - Kiddeo, Allen Solly, and more have an amazing collection of kids’ wear.</li>
+        <li>Buy the Best Topwear Online</li>
+        <li>You can buy the topwear of your choice in just a few click/taps. Log in to Flipkart through your smartphone, tablet, or laptop, browse through the amazing collection of tops, shirts, and blouses, choose the ones that you like, add them to the cart, and buy them in a convenient way. You can choose a preferred payment method during the checkout process. Online shopping helps you save time and lets you purchase the items of your choice even when you’re at home, traveling, or at the office.</li>
+        <li>Popular Searches: <a href="#">Sarees | Kurtis | Lehenga | Anarkali | Gowns | Palazzo | Jackets | Sweatshirts | Dresses | Bra | Lingerie | Nighty | Shorts | Mens Kurta | Kurta Pajama  | Designer Sarees | Designer Kurtis | Designer Salwar Suits</a> </li>
+    </div>
+    <footer>
+        <div class="container5">
+            <div class="conta1">
+                <div class="about">
+                    <h4>ABOUT</h4>
+                    <a href="">Contact us</a>
+                    <a href="">About us</a>
+                    <a href="">Careers</a>
+                    <a href="">Shopper Stories</a>
+                    <a href="">Press</a>
+                    <a href="">Corporate Information</a>
+                </div>
+                <div class="about">
+                    <h4>GROUP COMPANIES</h4>
+                    <a href="">Myntra</a>
+                    <a href="">Shopper Wholesale</a>
+                    <a href="">Cleartrip</a>
+                    <a href="">Shopsy</a>
+                </div>
+                <div class="about">
+                    <h4>Help</h4>
+                    <a href="">Payment</a>
+                    <a href="">Shipping</a>
+                    <a href="">Cancellation & Returns</a>
+                    <a href="">FAQ</a>
+                    <a href="">Report Infringement</a>
+                </div>
+                <div class="about">
+                    <h4>CONSUMER POLICY</h4>
+                    <a href="">Cancellation & Returns</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Security</a>
+                    <a href="">Privacy</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Grievance Redressal</a>
+                    <a href="">EPR Compliance</a>
+                </div>
+                <div class="about">
+                    <div class="mail">
+
+                        <h4>Mail us</h4>
+                        <a href="">Shopper Internet Private Limited,<br>Buildings Alyssa,Begonia & <br>Clove Embaccy
+                            Tech Village,<br>Outer Ring
+                            Road,Devarabeesanahalli Village,<br> Mumbai,560103,Maharashtra,India
+                        </a>
+                    </div>
+                    <div class="social">
+
+                        <h4>Social</h4>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+                <div class="about">
+                    <h4>Registered Office Address</h4>
+                    <a href="">Shopper Internet Private Limited,<br>Building Allysa,Begonia & <br>Clove Embassy Tech
+                        Village,<br>
+                        Outer Ring Road,Devarabeesanahalli village,<br>Mumbai 560103 <br>Maharashtra,India
+                        CIN:U51109KA2012PTC066107
+                        Telephone:044-45614700
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="foot">
+                    <i class="fa-brands fa-shopify"></i>
+                    <p>Become a Seller</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <p>Advertise</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-solid fa-gift"></i>
+                    <p>Gift Cards</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>Help Center</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p>2007-2024 Shopper.com</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+<script>
+     var para = document.getElementsByClassName('parts');
+        var counter = 5;
+       
+       for(var i=0;i<counter;i++)
+       {
+            para[i].style.display='block';
+       }
+       function adders(e)
+       {
+        e.preventDefault();
+        counter+=5;
+        for(var i=0;i<counter;i++)
+       {
+            para[i].style.display='block';
+       }
+        if(counter==para.length)
+        {
+            document.getElementsByTagName('button')[0].style.display = "none";
+        }
+       }
+</script>
+</html>

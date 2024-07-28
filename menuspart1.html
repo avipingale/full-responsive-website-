@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .realme-container{
+        width: 80%;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px 20px;
+        justify-content: center;
+    }
+    .realme{
+      width: 90%;
+      height: 100%;
+      display: grid;
+      grid-template-columns:repeat(1,100%);
+      grid-template-rows: repeat(5,300px);
+      row-gap: 10px;
+      
+    }
+    .realme1{
+        display: grid;
+        grid-template-columns: 300px 700px 1fr;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        
+
+    }
+    .realme1:hover{
+        transform: scale(1.02);
+        transition: .1s;
+        transition-timing-function: ease-in-out;
+        /* border: 2px solid rgb(67, 1, 105); */
+       box-shadow: 0px 0px 10px 2px rgb(67, 1, 105);
+    }
+    .realme1 img{
+        height: 90%;
+        width: 300px;
+        object-fit: contain;
+       
+    }
+   
+    .name{
+       
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 5px;
+        font-family: "Anta", sans-serif;;
+    }
+    .name p:hover{
+        color: rgb(67, 67, 245);
+    }
+    .ratings{
+        display: flex;
+       
+        
+    }
+    .p-rating{
+        background-color: green;
+        color: white;
+        border-radius: 2px;
+        margin-top: 10px;
+    }
+    .ratings h5{
+        color: gray;
+        font-size: 15px;
+        margin-top: 10px;
+        font-family: "Anta", sans-serif;;
+    }
+    .desc{
+        list-style: none;
+        margin-top: 40px;
+    }
+    .desc li{
+        padding: 5px 5px;
+        font-family: "Anta", sans-serif;
+        color: rgb(99, 97, 97);
+    }
+    .prices{
+        list-style:  none;
+        margin-top: 18px;
+        font-size: 20px;
+        font-family: "Anta", sans-serif;
+        padding: 5px 5px;
+    }
+    .dis{
+        display: flex;
+    }
+    .dis a{
+        font-size: 15px;
+        color: green;
+        
+    }
+    .prices li{
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+    .prices li:nth-child(2){
+        color: gray;
+    }
+    .prices li:nth-child(4){
+        color: green;
+        font-size: 12px;
+    }
+
+
+    
+   
+</style>
+<body>
+   
+    <div class="realme-container">
+        
+        <div class="realme">
+            <div class="realme1">
+                
+                 <img src="realmeimg1.jpg" alt="">
+        
+                <div class="details">
+                    <div class="name">
+                        <p>realme GT NEO 3(Asphalt Black,256 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.3<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>255 Ratings & 31 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>12GB RAM |256 GB ROM</li>
+                        <li>17.02cm(6.7 inch)Full HD+Display</li>
+                        <li>50MP + 8MP + 2MP | 16MP Front Camera</li>
+                        <li>4500 mAh lithium Ion Battary</li>
+                        <li>Mediatek Dimensity 8100 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:22,999/-</h3>
+                    <div class="dis">
+                      <li>₹45,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹19,500 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg2.png" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12+5G(Pioneer Green,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>3,046 Ratings & 440 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 128 GB ROM</li>
+                        <li>16.94cm(6.67inch)Full HD+Display</li>
+                        <li>50MP + 8MP + 2MP | 16MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Dimensity 7050 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:19,999/-</h3>
+                    <div class="dis">
+                      <li>₹23,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹17,500 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg3.png" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12Pro+5G(Submarine Blue,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.5<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>7,846 Ratings & 1,353 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 128 GB ROM</li>
+                        <li>17.02cm(6.7inch)Full HD+Display</li>
+                        <li>50MP + 8MP + 64MP | 32MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Snapdragon 7s Gen 2 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:29,999/-</h3>
+                    <div class="dis">
+                      <li>₹34,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹23,400 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg4.jpg" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12 5G(Twlingh Purple,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>344 Ratings & 32 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 128 GB ROM Expanded Upto 2 TB</li>
+                        <li>17.07cm(6.72inch)Full HD+Display</li>
+                        <li>108MP + 2MP  | 8MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Dimensity 6100+ Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:16,999/-</h3>
+                    <div class="dis">
+                      <li>₹20,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹14,800 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg5.jpg" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme C53 5G(Champion Gold,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>1,14,146 Ratings & 5,293 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>6GB RAM | 128 GB ROM Expanded Upto 2 TB</li>
+                        <li>17.12cm(6.74inch)Full HD+Display</li>
+                        <li>108MP + 2MP  | 8MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>T612 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:10,999/-</h3>
+                    <div class="dis">
+                      <li>₹13,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹8,950 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg6.jpg" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12+ 5G(Navigator Beige,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>3,093 Ratings & 443 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 128 GB ROM </li>
+                        <li>17.02cm(6.67inch)Full HD+Display</li>
+                        <li>50MP + 8MP  | 2MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Dimensity 7050 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:21,999/-</h3>
+                    <div class="dis">
+                      <li>₹25,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹19,800 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg7.webp" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12+ 5G(Pioneer Green,256 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>3,093 Ratings & 443 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 256 GB ROM Expanded Upto 1 TB</li>
+                        <li>17.07cm(6.72inch)Full HD+Display</li>
+                        <li>64MP + 2MP  | 8MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Helio G88 Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:21,999/-</h3>
+                    <div class="dis">
+                      <li>₹25,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹14,800 Off on Exchange</li>
+                </div>
+
+            </div>
+            <div class="realme1">
+                <img src="realmeimg5.jpg" alt="">
+                <div class="details">
+                    <div class="name">
+                        <p>realme 12 5G(Twlingh Purple,128 GB)</p>
+                    </div>
+                    <div class="ratings">
+                        <div class="p-rating">
+                            <p>4.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h5>344 Ratings & 32 Reviews</h5>
+                    </div>
+                    <div class="desc">
+                        <li>8GB RAM | 128 GB ROM Expanded Upto 2 TB</li>
+                        <li>17.07cm(6.72inch)Full HD+Display</li>
+                        <li>108MP + 2MP  | 8MP Front Camera</li>
+                        <li>5000 mAh Battary</li>
+                        <li>Dimensity 6100+ Processor</li>
+                        <li>1 Year Manufacture Warranty for Phone and 6 Months Warranty for In-Box Accessories </li>
+                    </div>
+
+                </div>
+                <div class="prices">
+                    <h3>₹:16,999/-</h3>
+                    <div class="dis">
+                      <li>₹20,999</li><a href="#">50% Off</a>
+                   </div>
+                    <li>Free delivery</li>
+                    <li>Save extra with combo Offer</li>
+                    <li>Upto ₹14,800 Off on Exchange</li>
+                </div>
+
+            </div>
+        
+        
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container5">
+            <div class="conta1">
+                <div class="about">
+                    <h4>ABOUT</h4>
+                    <a href="">Contact us</a>
+                    <a href="">About us</a>
+                    <a href="">Careers</a>
+                    <a href="">Shopper Stories</a>
+                    <a href="">Press</a>
+                    <a href="">Corporate Information</a>
+                </div>
+                <div class="about">
+                    <h4>GROUP COMPANIES</h4>
+                    <a href="">Myntra</a>
+                    <a href="">Shopper Wholesale</a>
+                    <a href="">Cleartrip</a>
+                    <a href="">Shopsy</a>
+                </div>
+                <div class="about">
+                    <h4>Help</h4>
+                    <a href="">Payment</a>
+                    <a href="">Shipping</a>
+                    <a href="">Cancellation & Returns</a>
+                    <a href="">FAQ</a>
+                    <a href="">Report Infringement</a>
+                </div>
+                <div class="about">
+                    <h4>CONSUMER POLICY</h4>
+                    <a href="">Cancellation & Returns</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Security</a>
+                    <a href="">Privacy</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Grievance Redressal</a>
+                    <a href="">EPR Compliance</a>
+                </div>
+                <div class="about">
+                    <div class="mail">
+
+                        <h4>Mail us</h4>
+                        <a href="">Shopper Internet Private Limited,<br>Buildings Alyssa,Begonia & <br>Clove Embaccy
+                            Tech Village,<br>Outer Ring
+                            Road,Devarabeesanahalli Village,<br> Mumbai,560103,Maharashtra,India
+                        </a>
+                    </div>
+                    <div class="social">
+
+                        <h4>Social</h4>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+                <div class="about">
+                    <h4>Registered Office Address</h4>
+                    <a href="">Shopper Internet Private Limited,<br>Building Allysa,Begonia & <br>Clove Embassy Tech
+                        Village,<br>
+                        Outer Ring Road,Devarabeesanahalli village,<br>Mumbai 560103 <br>Maharashtra,India
+                        CIN:U51109KA2012PTC066107
+                        Telephone:044-45614700
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="foot">
+                    <i class="fa-brands fa-shopify"></i>
+                    <p>Become a Seller</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <p>Advertise</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-solid fa-gift"></i>
+                    <p>Gift Cards</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>Help Center</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p>2007-2024 Shopper.com</p>
+                </div>
+                <div class="foot">
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        /* footer start */
+    .container5 {
+                width: 100%;
+                height: 400px;
+                
+
+                background-color:rgb(22, 21, 21);
+                padding: 10px 10px;
+
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .conta1 {
+                width: 100%;
+                height: 100%;
+                
+                display: flex;
+                column-gap: 10px;
+                margin: 0 auto;
+                justify-content: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+                padding: 10px 10px;
+                flex-grow: 1;
+
+            }
+
+            .about:nth-child(5) {
+                border-left: 1px solid rgba(255, 255, 255, 0.54);
+                display: grid;
+                flex-direction: column;
+                align-content: space-between;
+
+            }
+
+            .about {
+                width: 300px;
+                height: 100%;
+                padding: 5px 5px;
+                text-align: center;
+            }
+
+            .about h4 {
+                text-align: left;
+                color: chocolate;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+
+
+            }
+
+            .social {
+                text-align: left;
+            }
+
+            .social i {
+                color: chocolate;
+            }
+
+            .about a {
+                display: block;
+                padding: 5px 5px;
+                text-align: left;
+                color:white;
+                font-family: arial;
+                text-decoration: none;
+
+            }
+
+            .copyright {
+
+                width: 100%;
+                height: 40px;
+                display: grid;
+                column-gap: 10px;
+                margin: 0 auto;
+                justify-content: center;
+                grid-template-columns: repeat(4, .8fr) 300px 400px;
+
+            }
+
+            .foot {
+                width: 100%;
+                background-color: rgb(22, 21, 21);
+                padding: 10px 10px;
+                text-align: center;
+                display: flex;
+                column-gap: 10px;
+            }
+
+            .foot p {
+                color:white;
+            }
+
+            .foot i {
+                color: chocolate;
+            }
+            /* footer end */
+    </style>
+    
+</body>
+</html>
