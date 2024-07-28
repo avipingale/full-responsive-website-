@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="frm">
+
+        <input type="text" name="" id="user" onkeypress="return usercheck(event);">
+
+    </form>
+
+    <script>
+        function usercheck(event)
+        {
+            var aCode = event.which? event.which:event.keyCode;
+            if((aCode > 47 && aCode<58)|| aCode==64)
+            {
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/
+css/all.min.css">
+    <title>First Website</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+
+    .preloader{
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .preloader img{
+
+            transform: scale(2);
+        }
+
+     header {
+        width: 96%;
+        height: 60px;
+        margin: 0px auto;
+        display: flex;
+        column-gap: 10px;
+        padding: 10px 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        background-color: white;
+        
+
+    }
+
+    .box {
+        flex-grow: 1;
+        flex-basis: 200px;
+        box-sizing: border-box;
+    }
+
+    .box i {
+        font-size: 40px;
+    }
+
+    .box:nth-child(1) {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+
+    }
+
+    .box:nth-child(1) span {
+        color: red;
+        opacity: 0;
+    }
+
+    .box:nth-child(2) ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        opacity: 0px;
+         transform: translateY(-100%);
+        transition: 1s; 
+    }
+
+    .box:nth-child(2) ul li a {
+        color: black;
+
+        text-decoration: none;
+        padding: 2px 10px;
+        position: relative;
+        font-family: arial;
+        
+    }
+
+    .box:nth-child(2) ul li a:before {
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color: rgb(20, 208, 55);
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: scale(0)rotateY(0deg)skew(10deg);
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .box:nth-child(2) ul li:hover a::before {
+        /* width: 100%; */
+        transition: .5s;
+        transform: scale(1.2)rotateY(360deg)skew(10deg);
+
+    }
+
+    .box:nth-child(3) {
+        text-align: center;
+        transform: translateX(50%);
+        transition: 2s;
+
+    }
+
+    .box:nth-child(3) button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+
+    }
+    .box:nth-child(3) button:hover{
+        color: white !important;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        border-color: #494949 !important;
+        transition: all 0.3s ease 0s; 
+        background: rgb(193, 4, 104);
+    }
+
+    @keyframes abc
+        {
+            from{
+              color: blue;  
+            }
+            to{
+                color: yellow;
+            }
+            
+        }
+
+
+        
+    .login_parent{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+    .login_form{
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        position: absolute;
+        top:calc(50% - 450px / 2);
+        left: calc(50% - 350px / 2);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3);
+        overflow: hidden;
+        padding: 10px 10px;
+        z-index: -1;
+        display: none;
+    }
+   
+    .fa-xmark{
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+    }
+    
+
+    .container1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        row-gap: 30px
+    }
+
+    .icon1 h1{
+        font-size: 60px;
+        font-family: arial;
+    }
+
+    form{
+        display: grid;
+        grid-auto-rows: 40px;
+        row-gap:  10px;
+    }
+    .inputField{
+        background-color: rgb(253, 253, 253);
+        padding: 10px 10px;
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+        
+    }
+
+    .inputField input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        outline: none;
+        
+    }
+
+    .inputField input:focus{
+        border-bottom: 2px solid rgb(193,4,104);
+        color: rgb(193, 4, 104);
+    }
+
+    .buttonField,.forgetField{
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    .buttonField button{
+        padding: 5px 20px;
+        background-color: rgb(193, 4, 104);
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+    }
+
+
+    body{
+        background-color: aquamarine;
+    }
+   
+    .confirm{
+        width: 350px;
+        height: 300px;
+        background-color: turquoise;
+        position: absolute;
+        top: calc(50% - 350px / 2);
+        left: calc(50% - 350px / 2);
+        padding: 10px 10px;
+        border-radius: 10px;
+        z-index: 1;
+        
+    }
+    .container{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        row-gap: 20px;
+    }
+    .container i{
+        margin-top: 20px;
+        font-size: 60px;
+        text-align: center;
+    }
+    .icon h1{
+        font-size: 30px;
+        font-family: arial;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .icon p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        width: 100%;
+        height: 40px;
+        /* background: #000; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .confirm{
+        display: none;
+    }
+    .suc-confirm{
+        width: 350px;
+        height: 100px;
+        background-color: turquoise;
+        position: absolute;
+        top: calc(50% - 350px / 2);
+        left: calc(50% - 350px / 2);
+        padding: 10px 10px;
+        border-radius: 10px;
+        z-index: 1;
+        display: none;
+        
+    }
+    
+</style>
+<body>
+    
+  
+    <div class="preloader">
+        <img src="5.svg" alt="">
+    </div>
+    <header>
+        <div class="box">
+            <i class="fa-brands fa-google"></i>
+            <h1><span>o</span>pala</h1>
+        </div>
+        <div class="box">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="box box3">
+            <button>Login</button>
+        </div>
+    </header>
+
+<!-- login start -->
+<style>
+    .login_parent{
+        position: relative;
+        width: 100%;
+    }
+</style>
+<div class="login_parent">
+
+
+    <div class="confirm">
+        <div class="container">
+            <i class="fa-sharp fa-solid fa-question"></i>
+            <div class="icon">
+                <h1>Confirm</h1>
+                <p>Are you sure want to submit your form?</p>
+            </div>
+            <div class="btn">
+                <button>Yes</button>
+                <button>No</button>
+            </div> 
+        </div>
+    </div>
+    <div class="suc-confirm">
+        <h1>Login Successfull</h1>
+    </div>
+  
+
+    
+     <div class="login_form" >
+        <i class="fa-solid fa-xmark"></i>
+        <div class="container1">
+            <div class="icon1">
+                <h1>login</h1>
+            </div>
+            <form action="" id="frm">
+                <div class="inputField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="" id="user" placeholder="username/ email">
+                </div>
+                <div class="inputField">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="" id="pass" placeholder="password">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="buttonField">
+                    <button type="submit" id="log">login</button>
+                </div>
+                <div class="forgetField">
+                    <a href="#" class="forget">Forget password</a>
+                </div>
+                <div class="ealert"></div>
+            </form>
+        </div>
+      </div>
+</div>
+      
+
+
+      <!-- login end -->
+    
+     
+     <style>
+        .scrollBars{
+            width: 0%;
+            height: 20px;
+            background-color: black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+     </style>
+    <div class="scrollBars"></div>
+    <script>
+        
+        window.addEventListener('scroll',()=>{
+            let h = document.documentElement;
+            let stop = h.scrollTop || document.body.scrollTop;
+            let sh = h.scrollHeight || document.body.scrollHeight;
+            
+            let percetange  = stop /(sh - h.clientHeight)*100;
+            document.getElementsByClassName('scrollBars')[0].style.width = percetange+"%";
+            
+        })
+        
+
+        window.addEventListener('load',()=>{
+            setTimeout(() => {
+                document.getElementsByClassName('preloader')[0].style.display="none";
+                animations();
+            }, 1000);
+        })
+        window.addEventListener('unload',()=>{
+            setTimeout(() => {
+                document.getElementsByClassName('preloader')[0].style.display="none";
+                
+            }, 1000);
+        })
+
+        function animations()
+        {
+            document.getElementsByTagName('span')[0].style.transition="2s";
+            document.getElementsByTagName('span')[0].style.opacity="1";
+            
+            document.getElementsByTagName('span')[0].style.color="blue";
+        
+            document.getElementsByClassName('box')[2].style.transform = "translateX(0%)";
+            document.querySelector('.box ul').style.transform = "translateY(0%)";
+            
+        }
+
+        document.getElementsByClassName('box3')[0].addEventListener('click',()=>{
+            document.getElementsByClassName('login_form')[0].style.display="block";
+        })
+        
+
+        document.getElementsByClassName('fa-xmark')[0].addEventListener('click',()=>{
+            document.getElementsByClassName('login_form')[0].style.display="none";
+        })
+        
+
+        document.getElementsByClassName('fa-solid')[4].addEventListener('mousedown',()=>{
+                document.getElementById('pass').setAttribute('type','text');
+
+                document.getElementsByClassName('fa-solid')[4].className="fa-solid fa-eye-slash";
+        })
+   
+        document.getElementsByClassName('fa-solid')[4].addEventListener('mouseup',()=>{
+                document.getElementById('pass').setAttribute('type','password');
+                document.getElementsByClassName('fa-solid')[4].className="fa-solid fa-eye";
+        })
+
+
+
+       var login = document.getElementById('log');
+        login.addEventListener('click',function(e){
+            e.preventDefault();
+
+            var username = document.getElementById('user').value;
+            var pattern = /^[a-zA-Z0-9\@\.]{2,40}[a-z]{2,8}$/;
+
+            var password = document.getElementById('pass').value;
+            var pattern1 = /^[a-zA-Z]{2,4}[0-9]{2,4}$/;
+
+            if(!pattern.test(username))
+            {
+                document.getElementsByClassName('ealert')[0].innerHTML="username is wrong"
+                setTimeout(() => {
+                    document.getElementsByClassName('ealert')[0].innerHTML="";
+                }, 1000);
+
+            }else if(!pattern1.test(password))
+            {
+                document.getElementsByClassName('ealert')[0].innerHTML="password is wrong"
+                setTimeout(() => {
+                    document.getElementsByClassName('ealert')[0].innerHTML="";
+                }, 1000);
+            }else{
+                document.getElementsByClassName('confirm')[0].style.display="block";
+                document.getElementsByClassName('btn')[0].children[0].addEventListener('click',submit);
+                document.getElementsByClassName('btn')[0].children[1].addEventListener('click',cancel);
+                
+               
+            }
+        })
+
+        function submit()
+        {
+           document.getElementsByClassName('confirm')[0].style.display="none";
+           document.getElementsByClassName('suc-confirm')[0].style.display="block";
+           document.forms['frm'].reset();
+            setTimeout(() => {
+                document.getElementsByClassName('suc-confirm')[0].style.display="none";
+                   window.open("imageSlide.html","_parent");
+            }, 1000);
+        }
+        function cancel()
+        {
+            document.getElementsByClassName('confirm')[0].style.display="none";
+        
+        }
+
+
+        window.addEventListener('scroll',contentAnimation);
+
+        function contentAnimation()
+        {
+            var a  =document.getElementsByTagName('header')[0];
+            var pos = window.pageYOffset;
+
+        
+
+            if(pos>0)
+            {
+                a.style.position="fixed";
+                a.style.top="0px";
+                a.style.width="100%";
+                a.style.backgroundColor="gray";
+                
+            }else{
+                a.style.position="relative";
+                a.style.top="0px";
+                a.style.width="96%";
+                a.style.backgroundColor="white";
+                
+            }
+            
+        }
+
+        
+    </script>
+    
+</body>
+</html>

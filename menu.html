@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: 450px;
+        grid-gap: 10px;
+        border: 1px solid black;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:1024px) {
+        main{
+            grid-template-columns: (3,1fr);
+            grid-auto-rows: 350px;
+        }
+        .pdetails:nth-child(2) h2{
+            font-size: 14px;
+        }
+        .pdetails:nth-child(3){
+            column-gap: 5px;
+        }
+        .pdetails:nth-child(3) button{
+            transform: scale(.8);
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        Main{
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: 300px;
+        }
+        .pdetails:nth-child(2) h2{
+            font-size: 14px;
+        }
+        .pdetails:nth-child(3){
+            column-gap: 5px;
+        }
+        .pdetails:nth-child(3) button{
+            transform: scale(.8);
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        main{
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows: 250px;
+        }
+        .pdetails:nth-child(2) h2{
+            font-size: 14px;
+        }
+        .pdetails:nth-child(3){
+            column-gap: 5px;
+        }
+        .pdetails:nth-child(3) button{
+            transform: scale(.8);
+        }
+
+    }
+
+</style>
+<body>
+    <main>
+        <style>
+            :root{
+                --tbg-background-color:white;
+                --ttext-color:black;
+                --tbutton-background-color:rgb(255, 119, 0);
+                --fm-font-family:arial;
+                --shadow-box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+            }
+            .tile{
+                display: grid;
+                grid-template-rows: 1fr 40px 40px;
+                row-gap: 2px;
+                background-color: var(--tbg-background-color);
+                padding: 5px 5px;
+                border: 1px solid black;
+                box-shadow: var(--shadow-box-shadow);
+
+            }
+            .pdetails{
+                border: 1px solid black;
+
+            }
+                .pdetails:nth-child(1) img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+                .pdetails:nth-child(2){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                .pdetails:nth-child(2) h2{
+                    text-align: center;
+                    font-family: var(--fm-font-family);
+                }
+                .pdetails:nth-child(3){
+                    display: flex;
+                    column-gap: 10px;
+                }
+                .pdetails:nth-child(3) button {
+                    flex-basis: 100px;
+                    flex-grow: 1;
+                    font-size: 16px;
+                    background-color: var(--tbutton-background-color);
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: var(--shadow-box-shadow);
+                }
+
+            
+        </style>
+
+    
+        
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <Button>Cart</Button><Button>Buy</Button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+    <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>
+       <div class="tile">
+        <div class="pdetails">
+            <img src="Screenshot 2023-12-11 163116.png" alt="">
+        </div>
+        <div class="pdetails">
+            <h2>Coffee with Chocolate</h2>
+        </div>
+        <div class="pdetails">
+            <button>Cart</button><button>Buy</button>
+        </div>
+    </div>  
+
+   </main>
+</body>
+</html>

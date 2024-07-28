@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .products {
+        position: relative;
+        width: 70%;
+        height: 150px;
+        /* background-color: gray; */
+        margin: 10px auto;
+        display: flex;
+        column-gap: 10px;
+        padding: 10px 10px;
+
+
+
+    }
+
+    .pro {
+        position: relative;
+        width: 98%;
+        height: 100%;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr 20px;
+        text-align: center;
+
+    }
+
+    .pname-image {
+
+        display: grid;
+        grid-template-rows: 1fr 20px;
+        text-align: center;
+
+        padding: 5px 5px;
+
+
+    }
+
+    .img {
+
+        position: relative;
+    }
+
+    .img img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+    .pro_name p {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .menu-list {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        background-color: white;
+        display: none;
+    }
+
+    .menu-list ul {
+
+        padding: 20px 5px;
+        color: rgb(73, 71, 71);
+        list-style: none;
+        box-shadow: 0px 5px 3px .5px rgba(67, 1, 105, .3);
+        font-family: "Anta", sans-serif;
+        font-weight: bold;
+        text-align: left;
+
+    }
+
+    .menu-list ul li:hover {
+        /* background-color: rgb(67, 1, 105); */
+        color: rgb(67, 1, 105);
+        letter-spacing: 2px;
+        transition: .5s ease-in-out;
+    }
+</style>
+
+<body>
+    <div class="products">
+        <div class="pro">
+            <div class="pname-image">
+
+                <div class="img">
+                    <img src="4670051.jpg" alt="">
+                </div>
+                <div class="pro_name">
+                    <p>Mobiles <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li>Realme </li><br>
+                    <li>Poco </li><br>
+                    <li>Samsung </li><br>
+                    <li>Vivo </li><br>
+                    <li>Apple </li><br>
+                    <li>Motorola </li><br>
+                    <li>Redmi </li><br>
+                    <li>Infinix </li><br>
+                    <li>Google </li><br>
+                    <li>Oppo </li><br>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pro">
+            <div class="pname-image">
+                <div class="img">
+                    <img src="couplefashionlogo.jpg" alt="">
+                </div>
+
+                <div class="pro_name">
+                    <p>Fashion <i class="fa-solid fa-angle-down"></i></p>
+
+                </div>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li>Men's Top Wear </li><br>
+                    <li>Men's Bottom Wear</li><br>
+                    <li>Women's Ethnic </li><br>
+                    <li>Women's Western </li><br>
+                    <li>Men's Footwear </li><br>
+                    <li>Women's Footwear </li><br>
+                    <li>Bags Suitcase & Luggage</li><br>
+                    <li>Kids</li><br>
+                    <li>Essentials </li><br>
+                    <li>Winter</li><br>
+                </ul>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="pname-image">
+                <div class="img">
+                    <img src="electroniclogo.jpg" alt="">
+                </div>
+                <div class="pro_name">
+                    <p>Electronics <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+
+            <div class="menu-list">
+                <ul>
+                    <li>Electronics GST Store </li><br>
+                    <li>Camera & Accessories</li><br>
+                    <li>Computer peripherals </li><br>
+                    <li>Gaming </li><br>
+                    <li>Health & Personal Care </li><br>
+                    <li>Laptop Accessories </li><br>
+                    <li>Laptop & Desktop</li><br>
+                    <li>Mobile Accessories</li><br>
+                    <li>Powerbank </li><br>
+                    <li>Smart Wearables</li><br>
+                </ul>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="pname-image">
+                <div class="img">
+                    <img src="furniturelogo.jpg" alt="">
+                </div>
+                <div class="pro_name">
+                    <p>Home & Furniture <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li>Furniture Studio </li><br>
+                    <li>Loving Room Furniture</li><br>
+                    <li>Kitchen & Dining </li><br>
+                    <li>Bedroom Furniture</li><br>
+                    <li>Space Saving Furniture </li><br>
+                    <li>Home Decor </li><br>
+                    <li>Tools & Utility</li><br>
+                    <li>Work Space Furniture</li><br>
+                    <li>Kids Furniture </li><br>
+                    <li>Cleaning & Bath</li><br>
+                </ul>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="pname-image">
+                <div class="img">
+                    <img src="applianceslogo.jpg" alt="">
+                </div>
+                <div class="pro_name">
+                    <p>Appliances <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li>Televisions </li><br>
+                    <li>Washing Machines</li><br>
+                    <li>Refrigerators </li><br>
+                    <li>Air Conditioners </li><br>
+                    <li>Washing Machines </li><br>
+                    <li>Electric Coockers </li><br>
+                    <li>Coffee Maker</li><br>
+                    <li>Water Purifires</li><br>
+                    <li>Air Purifires </li><br>
+                    <li>Sandwich Makers</li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var menuDropDownBtn = document.getElementsByClassName('pname-image');
+    var menuDropDownBtnHide = document.getElementsByClassName('pro');
+
+    for (var i = 0; i < menuDropDownBtn.length; i++) {
+        var Btn = menuDropDownBtn[i];
+      
+
+        Btn.addEventListener('mouseenter', (e) => {
+            e.preventDefault();
+           
+            var BtnTarget = e.target.parentElement;
+            var menuList = BtnTarget.getElementsByClassName('menu-list')[0];
+            menuList.style.display="block";
+          
+      
+
+        })
+
+        for (var i = 0; i < menuDropDownBtnHide.length; i++) {
+            var BtnHide = menuDropDownBtnHide[i];
+            BtnHide.addEventListener('mouseleave', (e) => {
+            e.preventDefault();
+            var BtnH = e.target.parentElement;
+            var menuList = BtnH.getElementsByClassName('menu-list')[0];
+            menuList.style.display="none";
+        })
+    }
+
+        
+        
+    
+    }
+
+</script>
