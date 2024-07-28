@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        
+        
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(1, 201, 240);
+        
+        
+    }
+</style>
+<body>
+    
+    <div class="box"></div>
+    <div class="box1"></div>
+
+    <script>
+        var a  =document.getElementsByClassName('box')[0];
+        var counter = 0;
+        anima();
+        setInterval(anima,500);
+        function anima()
+        {
+            counter+=50;
+            a.style.transform = "translateX("+counter+"px)";
+
+            if(counter>1366)
+            {
+                counter=0;
+            }
+            
+        
+        }
+        var b =document.getElementsByClassName('box1')[0];
+        var counter1=1400;
+        function anima1()
+        {
+            counter1-=50;
+            b.style.transform = "translateX("+counter1+"px)";
+
+            if(counter1>1366)
+            {
+                counter1=0;
+            }
+        }
+        setInterval(() => {
+            anima1();
+            anima();
+        }, 500);
+    </script>
+
+</body>
+</html>
