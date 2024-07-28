@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+    font-family: "Anta", sans-serif;
+        box-sizing: border-box;
+    }
+    .container_deliver {
+width: 80%;
+height: auto;
+overflow: hidden;
+padding: 10px 10px;
+margin: 0 auto;
+display: flex;
+column-gap: 10px;
+justify-content: center;
+}
+
+.deliver_details {
+flex-grow: 1;
+height: 100%;
+row-gap: 5px;
+box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .25);
+}
+.deliver-address{
+  display: grid;
+  grid-template-rows:1fr 200px;
+  row-gap: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .25);
+}
+.address li p button{
+    margin-bottom: 10px;
+    
+}
+.address ul li:nth-child(3)
+{
+    color: gray;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 0px 3px;
+}
+.address ul{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.add p{
+    margin-left: 10px;
+}
+
+.address li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom:10px ;
+    
+}
+.address p{
+    margin-right: 10px;
+   
+}
+
+.add-name{
+    background-color: rgb(67, 1, 105);
+    padding: 10px 5px;
+    color: white;
+    font-size: 12PX;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .25);
+}
+.deliver{
+    padding: 10px 30px;
+    background-color: rgb(236, 130, 53);
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+ .payment-options table{
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    
+}
+.payment-options td{
+    padding: 0px;
+   font-family: "Anta", sans-serif;
+   color: rgb(63, 63, 63);
+   font-weight: 400;
+    font-size:15px;
+  }
+  
+  .price-details{
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .25);
+  }
+ .price-details table {
+        width: 100%;
+        height: auto;
+
+    }
+    .price-details h2{
+        color: white;
+        background-color:rgb(67, 1, 105);
+    }
+    .price-details td {
+    padding: 10px;
+    font-family: "Anta", sans-serif;
+    color: rgb(63, 63, 63);
+    font-weight: 400;
+    font-size: 20px;
+}
+.price-details td:last-child {
+    text-align: right;
+}
+
+.price-details  table button {
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: rgb(67, 1, 105);
+    color: white;
+    cursor: pointer;
+
+}
+.payment-details tr:last-child td {
+    text-align: center;
+    
+}
+.payment-details table button{
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: rgb(67, 1, 105);
+    color: white;
+    cursor: pointer;
+    
+
+}
+@media screen and (max-width:768px) {
+    .container_deliver {
+        flex-direction: column; 
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 10px;
+    }
+    .price-details,.deliver_details{
+        width: 100%;
+        box-shadow:none;
+    }
+    .price-details{
+        order: 1;
+    }
+    .deliver_details{
+        order: 2;
+    }
+    .address,.deliver-address{
+        box-shadow: none;
+    }
+    html li,html p{
+        font-size: 12px;
+    }
+    .product_billings td{
+        font-size: 12px;
+    }
+    .price-details td{
+        font-size: 12px;
+    }
+    .window-box{
+        width:300px;
+    }
+}
+
+
+  
+
+  
+
+</style>
+<body>
+
+    <div class="container_deliver">
+        <div class="deliver_details">
+            <div class="deliver-address">
+                <div class="add-name">
+                 <h2>DELIVERRY ADDRESS</h2>
+               </div>
+               <div class="address">
+                <ul>
+
+                    <li><input type="radio"></li>
+                    <li>Mohammad Huzaifa</li>
+                    <li>Work</li>
+                    <li>9004535724</li>
+                </ul>
+                <div class="add">
+                <p>shop no 12/13 shudhanshu chamber behind santosh hotel opp railway station new<br>
+                    station road kalyan,kalyan,Maharashtra-421301
+                </p>
+            </div>
+                <button class="deliver">DELIVER HERE</button>
+
+                
+               </div>
+
+            </div>
+            <div class="payment-options">
+                <div class="add-name">
+                    <h2>PAYMENT OPTIONS</h2>
+                </div>
+                <div class="payment-details">
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="pay" value="UPI"></td>
+                            <td>UPI</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="pay" value="Wallet"></td>
+                            <td>Wallet</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="pay" value="Credit/Debit/ATM Card"></td>
+                            <td>Credit/Debit/ATM Card</td>
+                           
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="pay" value="COD"></td>
+                            <td>Cash on Delivery</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="payment">Payment</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="price-details">
+            
+
+            
+        </div>
+    </div>
+    <style>
+        .window-box{
+        width: 400px;
+        height: 300px;
+        background-color: white;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3);
+        overflow: hidden;
+        padding: 10px 10px;
+        z-index: 1;
+        display: grid;
+       
+      
+    }
+    .window-box button{
+        padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(67, 1, 105);
+    color: white;
+    cursor: pointer;
+
+    }
+    
+    </style>
+    <div class="window-box">
+        <table>
+            <tr>
+                <td>Total Amoount</td>
+                <td>₹ : <span class="f-amt"></span></td>
+            </tr>
+            <tr>
+                <td>Payment Mode</td>
+                <td class="pay_type"></td>
+            </tr>
+            <tr>
+                <td><button class="accept_payment">Accept Payment</button></td>
+            </tr>
+        </table>
+        
+    </div>
+    <style>
+        .window-box{
+            display: none;
+        }
+    </style>
+
+    <script>
+        var target = document.getElementsByClassName('price-details')[0];
+
+        var pitem = localStorage.getItem('pitem');
+            var pprice = localStorage.getItem('pprice');
+            var pdcharge = localStorage.getItem('pdcharge');
+            var pgtotal =localStorage.getItem('pgtotal');
+          
+            var title_td =localStorage.getItem('title_td');
+            var counter_td =localStorage.getItem('counter_td');
+            var price_td =localStorage.getItem('price_td');
+
+      
+   
+        var iHtml = `
+        <table class="product_billings">
+                <caption>Product Billings</caption>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </table>
+        <table>
+                <caption>
+                    <h2>Price details</h2>
+                </caption>
+                <tr>
+                    <td>Total Item</td>
+                    <td class="qitem">${pitem}</td>
+                </tr>
+                
+                <tr>
+                    <td>Price</td>
+                    <td>₹ : <span class="total_price">${pprice}</span></td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>₹ : <span class="d_charge">${pdcharge}</span></td>
+                </tr>
+
+
+                <tr>
+                    <td>Total Amount</td>
+                    <td>₹ : <span class="grand_total">${pgtotal}</span></td>
+                </tr>
+             
+
+            </table>
+        `
+        target.innerHTML = iHtml;
+
+        var table_row = document.createElement('tr');
+        var table_data_html = `<td class='title_td'>${title_td}</td><td class='counter_td'>1</td><td>${counter_td}</td><td class='price_td'>${price_td}</td>`;
+
+    table_row.innerHTML = table_data_html;
+
+    var product_billing = document.getElementsByClassName('product_billings')[0];
+            product_billing.appendChild(table_row);
+        
+        var Payment = document.getElementsByClassName('payment')[0];
+     
+        Payment.addEventListener('click',(e)=>{
+            e.preventDefault();
+            var pay =document.querySelector('input[name="pay"]:checked').value;
+           
+          
+            var grand_total = document.getElementsByClassName('grand_total')[0].innerHTML;
+            var final_amt = document.getElementsByClassName('f-amt')[0].innerHTML=grand_total;
+         
+                var payment_type = document.getElementsByClassName('pay_type')[0].innerHTML = pay;
+                document.getElementsByClassName('window-box')[0].style.display = "grid";
+            
+            
+        
+        })
+        var accept_payment = document.getElementsByClassName('accept_payment')[0];
+        accept_payment.addEventListener('click',(e)=>{
+            e.preventDefault();
+            document.getElementsByClassName('window-box')[0].style.display = "none";
+            window.location.href = "index.html";
+        })
+
+        </script>
+</body>
+</html>

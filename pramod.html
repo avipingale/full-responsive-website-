@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  *{
+    margin:0px;
+    padding: 0px;
+  }
+  .main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    transform: translate(-50%,-50%);
+  }
+  .flip-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+    transition: .5s;
+  }
+  .flip-container:hover{
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .front,.back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    backface-visibility: hidden;
+  }
+  .front{
+    background-image: url(Pizza.jpg);
+    background-size: cover;
+  }
+  .back{
+    transform: rotateY(180deg);
+    background-color: blue;
+    background-image: url(Screenshot\ 2023-12-11\ 163116.png);
+    background-size: cover;
+  }
+  </style>
+<body>
+  <!-- back visible -->
+
+  <div class="main-container">
+    <div class="flip-container">
+      <div class="front">
+        <h1>Front</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, recusandae.</p>
+      </div>
+      <div class="back">
+        <h1>Back</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, perferendis.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

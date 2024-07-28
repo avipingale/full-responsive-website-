@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        display: none;
+    }
+
+</style>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+    <p>11</p>
+    <p>12</p>
+    <p>13</p>
+    <p>14</p>
+    <p>15</p>
+    <p>16</p>
+    <p>17</p>
+    <p>18</p>
+    <p>19</p>
+    <p>20</p>
+    <div class="addbutton"></div>
+    <button onclick="adders(event);">add more</button>
+    <script>
+        var para = document.getElementsByTagName('p');
+        var counter = para.length/5;
+        console.log(counter);
+       for(var i=1;i<counter;i++)
+       {
+           document.getElementsByClassName('addbutton')[0].insertAdjacentHTML("beforeend","<input value="+i+" onFocus='nextPage(event)'>");
+       }
+       function nextPage(e)
+       {
+        e.preventDefault();
+        var btn = e.target.value;
+        for(var i=0;i<btn*5;i++)
+        {
+            para[i].style.display = "block";
+        }
+        
+
+       }
+    //    function adders(e)
+    //    {
+    //     e.preventDefault();
+    //     counter+=5;
+    //     for(var i=0;i<counter;i++)
+    //    {
+    //         para[i].style.display='block';
+    //    }
+    //     if(counter==para.length)
+    //     {
+    //         document.getElementsByTagName('button')[0].style.display = "none";
+    //     }
+    //    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+   
+    .header{
+        width: 100%;
+        height: 60px;
+        background-color:cornflowerblue;
+        display: grid;
+        grid-template-columns: 400px 1fr 200px 200px;
+        column-gap: 5px;
+    }
+    .head-part{
+        border: 1px solid black;
+    }
+
+    .log{
+        padding: 10px 30px;
+        background-color:chocolate;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-top: 10px
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 80vh;
+  background-color: rgb(219, 233, 250);
+  padding: 0.375rem;
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+
+button,
+a {
+  all: unset;
+  font: inherit;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  width: 5rem;
+  height: calc(95vh - 0.75rem);
+  background-color: #ffffff;
+  padding: 1rem 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: width 500ms ease;
+}
+body.active nav {
+  width: 15rem;
+}
+
+.sidebar-header,
+.sidebar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.logo-wrapper > img {
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: #f4f4f6;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar-links {
+  flex-direction: column;
+  margin-bottom: auto;
+  gap: 0.6rem;
+  padding-top: 1.5rem;
+}
+nav > .sidebar-links {
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+body.active .sidebar-links,
+body.active .sidebar-header,
+body.active .user-profile {
+  justify-content: start;
+  align-items: stretch;
+}
+
+.link {
+  display: flex;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+}
+.hidden {
+  display: none;
+}
+body.active .hidden {
+  display: inline;
+}
+
+.link:hover,
+.link.active:hover {
+  background-color: #e4e4e8;
+}
+.link.active {
+  background-color: #f4f4f6;
+}
+
+.link > img {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-bottom .sidebar-links {
+  padding-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+body.active .toggle-btn {
+  transform: rotate(180deg);
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-avatar:hover {
+  scale: 1.1;
+}
+
+.user-details {
+  align-self: center;
+  overflow: hidden;
+}
+.user-details .username {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.user-details .user-email {
+  font-size: 0.8rem;
+}
+</style>
+
+<body>
+   <div class="header">
+     <div class="head-part"></div>
+     <div class="head-part"></div>
+     <div class="head-part"></div>
+     <div class="head-part">
+        <button class="log">Login</button>
+     </div>
+   </div>
+
+   
+   <div class="container">
+    <nav>
+        <div class="sidebar-header">
+          <a class="logo-wrapper">
+            <img src="icons8-mitsubishi-50.png" alt="Logo">
+            <h2 class="hidden">LOGO</h2>
+          </a>
+          <button class="toggle-btn">
+            <img src="icons8-double-right-32.png" alt="expand button">
+          </button>
+        </div>
+  
+  
+        <div class="sidebar-links">
+          <a class="link active">
+            <img src="icons8-home-32.png" alt="">
+            <span class="hidden">Home</span>
+          </a>
+          <a class="link">
+            <img src="icons8-group-of-projects-32.png" alt="">
+            <span class="hidden">Projects</span>
+          </a>
+          <a class="link">
+            <img src="./assets/dashboard.svg" alt="">
+            <span class="hidden">Dashboard</span>
+          </a>
+          </li>
+          <a class="link">
+            <img src="./assets/tasks.svg" alt="">
+            <span class="hidden">Tasks</span>
+          </a>
+        </div>
+  
+  
+        <div class="sidebar-bottom">
+          <div class="sidebar-links">
+            <a class="link">
+              <img src="icons8-setting-ios-17-outlined-32.png" alt="">
+              <span class="hidden">Settings</span>
+            </a>
+          </div>
+  
+          <div class="user-profile">
+            <div class="user-avatar">
+              <img src="shirt7.png" alt="">
+            </div>
+            <div class="user-details hidden">
+              <p class="username">Jane Doe</p>
+              <p class="user-email">janedoe@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+   </div>
+    
+</body>
+<script>
+  const sidebarBtn = document.querySelector(".toggle-btn");
+const sidebar = document.querySelector("aside");
+
+sidebarBtn.addEventListener("click", () => {
+  document.body.classList.toggle("active");
+});
+</script>
+</html>

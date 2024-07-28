@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: aqua; */
+    }
+
+    main {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: grid;
+        padding: 10px 10px;
+
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 450px;
+        grid-gap: 10px 10px;
+        border: 1px solid rgb(88, 88, 88);
+        justify-content: center;
+
+    }
+
+
+
+    /* <!-- @media queries --> */
+
+
+    @media screen and (max-width:1024px) {
+        main {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 350px;
+        }
+        .pdetail:nth-child(2) h2{
+                font-size: 14px;
+            }
+            .pdetail:nth-child(3){
+               
+                column-gap: 5px;
+            }
+            .pdetail:nth-child(3) button{
+                transform: scale(.8);
+                
+            }
+
+    }
+
+    @media screen and (max-width:768px) {
+        main {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 300px;
+        }
+        .pdetail:nth-child(2) h2{
+                font-size: 14px;
+            }
+            .pdetail:nth-child(3){
+               
+                column-gap: 5px;
+            }
+            .pdetail:nth-child(3) button{
+                transform: scale(.8);
+                
+            }
+
+    }
+
+    @media screen and (max-width:500px) {
+        main {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 250px;
+        }
+        .pdetail:nth-child(2) h2{
+                font-size: 14px;
+            }
+            .pdetail:nth-child(3){
+               
+                column-gap: 5px;
+            }
+            .pdetail:nth-child(3) button{
+                transform: scale(.8);
+                
+            }
+    }
+</style>
+
+
+<body>
+    <main>
+        <style>
+            :root{
+                --tbg-background-color:white;
+                --ttext-color:black;
+                --tbutton-background-color:rgb(255, 119, 0);
+                --fm-font-family:arial;
+                --shadow-box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, .5);
+            }
+            .tile {
+                display: grid;
+                grid-template-rows: 1fr 40px 40px;
+                row-gap: 2px;
+                background-color: var(--tbg-background-color);
+                padding: 5px 5px;
+                box-shadow: var(--shadow-box-shadow);            
+            }
+
+            .pdetail {
+               
+            }
+            .pdetail:nth-child(1) img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .pdetail:nth-child(2){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .pdetail:nth-child(2) h2{
+                text-align: center;
+                font-family: var(--fm-font-family);
+            }
+            .pdetail:nth-child(3){
+                display: flex;
+                column-gap: 10px;
+            }
+            .pdetail:nth-child(3) button{
+                flex-basis: 100px;
+                flex-grow: 1;
+                font-size: 16px;
+                background-color: var(--tbutton-background-color);
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                box-shadow: var(--shadow-box-shadow);
+                
+            }
+
+        </style>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="pdetail">
+                <img src="Pizza.jpg" alt="">
+            </div>
+            <div class="pdetail">
+                <h2>3D Pizza Onion Otappa </h2>
+            </div>
+            <div class="pdetail">
+                <button>Cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+       
+    </main>
+
+
+
+
+
+</body>
+
+</html>
