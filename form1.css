@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#login_form{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 450px/ 2);
+    left: calc(50% - 350px / 2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.5);
+    overflow: hidden;
+    padding: 10px 10px;
+}
+.container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* background-color: gray; */
+    grid-template-rows: 100px 1fr;
+    row-gap: 30px;
+}
+.icon h1{
+    font-size: 60px;
+    font-family: arial;
+}
+
+form{
+    display: grid;
+    grid-auto-rows: 40px;
+    row-gap: 10px;
+}
+.inputField{
+    background-color: white;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+}
+.inputField input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+}
+
+.inputField input:focus{
+    border-bottom: 1px solid rgb(193,4,104);
+    color: rgb(193,4,104);
+}
+.buttonField,.forgetField{
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.buttonField button{
+    padding: 5px 20px;
+    background-color: rgb(193,4,104);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.12);
+}
